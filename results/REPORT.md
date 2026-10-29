@@ -19,8 +19,8 @@ datasets or weights. Numerical records are in [`paper/`](paper/).
 
 | Experiment | Environment |
 |---|---|
-| Original-YOLO and CEDAR-YOLO training; CEDAR architecture/quality sweep | PC GPU, Conda `torch270_py312_cuda`, Python 3.12, PyTorch 2.7.1+cu128 |
-| Local speed baselines and stage timings | One Jetson Orin Nano CPU, FP32, L4T r36.4.0, `/opt/venv`, Python 3.12, PyTorch 2.7.0 |
+| Original-YOLO and CEDAR-YOLO training; CEDAR architecture/quality sweep | PC GPU, Python 3.12, PyTorch 2.7.1+cu128 |
+| Local speed baselines and stage timings | One Jetson Orin Nano CPU, FP32, L4T r36.4.0, Python 3.12, PyTorch 2.7.0 |
 | Original-YOLO MDI and CEDAR-MDI | Multiple Jetsons using the same Jetson environment, CPU FP32 |
 
 Full [recommended/tested library versions](../README.md#experiment-environments)

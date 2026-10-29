@@ -104,8 +104,8 @@ python reproduce.py --task raw-split --raw-source /path/to/IEEE_UPLOAD
 **Preprocessing parameters and library versions change the spectrogram pixels and
 can make pretrained models unreliable.** Use the supplied PNGs for reproduction.
 For your own preprocessing pipeline, retrain a model on its output.
-PC training and the CEDAR quality sweep use Conda `torch270_py312_cuda`;
-local speed baselines and MDI run on Jetson in `/opt/venv`. The tested renderer
+PC training and the CEDAR quality sweep use Python 3.12 with CUDA-compatible PyTorch;
+local speed baselines and MDI use the Jetson CPU FP32 configuration documented in the repository. The tested renderer
 uses NumPy 2.2.4, Matplotlib 3.10.8 and Pillow 11.2.1, with SciPy 1.14.1 on the
 PC and 1.17.1 on Jetson. Preserve both rendering versions and parameters:
 even a small mismatch can invalidate pretrained predictions. Complete settings

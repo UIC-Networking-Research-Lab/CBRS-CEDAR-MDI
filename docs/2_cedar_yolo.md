@@ -27,7 +27,7 @@ the released weights in `trained_models/` ([weights.md](weights.md)) if you skip
 
 ## 1. Training
 
-Training runs on the **PC GPU** in Conda `torch270_py312_cuda`, not on Jetson.
+Training runs on the **PC GPU** using Python 3.12 and CUDA-compatible PyTorch, not on Jetson.
 See the [PC/Jetson environment table](../README.md#experiment-environments).
 
 ```bash
@@ -65,7 +65,7 @@ the best validation mAP@0.5 is saved as `best.pt`. Augmentation is off (`USE_AUG
 ## 2. Inference on spectrogram PNGs
 
 The paper's CEDAR-YOLO quality/architecture sweep runs on the **PC GPU**, in the
-same Conda environment as training. It uses the later local/sweep checkpoints.
+same software versions as training. It uses the later local/sweep checkpoints.
 
 ```bash
 # every sig_yolo_* checkpoint under trained_models/, on GPU 0
@@ -84,7 +84,7 @@ Options: `--split`, `--conf` (0.25), `--iou` (0.45), `--batch`, `--data`.
 ## 3. End-to-end inference from raw I/Q (paper protocol)
 
 The paper's **local speed baseline runs on one Jetson Orin Nano CPU in FP32**,
-using the Jetson `/opt/venv` environment and earlier Jetson checkpoint edition.
+using the Jetson software configuration and earlier Jetson checkpoint edition.
 This is separate from the PC quality sweep above. Use the
 [same Jetson setup as MDI](3_yolo_mdi.md#environment-on-every-node).
 

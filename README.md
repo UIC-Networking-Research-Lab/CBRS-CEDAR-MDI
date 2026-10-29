@@ -89,18 +89,17 @@ and **16.1 s** across the quality-retained configurations. See the
 
 | Experiment | Platform and environment | Work performed |
 |---|---|---|
-| Model training and CEDAR-YOLO quality evaluation | Windows PC, Conda `torch270_py312_cuda`, CUDA GPU | Train original YOLO and CEDAR-YOLO; evaluate CEDAR feature-grid/coverage configurations on PNGs |
-| Local speed baseline | One Jetson Orin Nano, L4T r36.4.0, Python 3.12 in `/opt/venv`, CPU FP32 | Measure the raw-I/Q pipeline and individual stages on one device |
+| Model training and CEDAR-YOLO quality evaluation | Windows PC, Python 3.12, CUDA GPU | Train original YOLO and CEDAR-YOLO; evaluate CEDAR feature-grid/coverage configurations on PNGs |
+| Local speed baseline | One Jetson Orin Nano, L4T r36.4.0, Python 3.12, CPU FP32 | Measure the raw-I/Q pipeline and individual stages on one device |
 | Model-distributed inference | Multiple Jetson Orin Nano devices, same Jetson environment, CPU FP32 | Run original-YOLO MDI and CEDAR-MDI over Wi-Fi, including compression and partition-policy comparisons |
 
-The PC environment name is historical: its installed PyTorch version is **2.7.1**.
 These are recommended, tested environments, not a requirement to match every
 general-purpose library version. **Raw-I/Q preprocessing is the exception: preserve
 the renderer's library versions and parameters, and check pixels against the supplied PNGs.**
 
 | Component | PC: training / CEDAR quality | Jetson: local baseline / MDI |
 |---|---|---|
-| Python | 3.12.13, Conda `torch270_py312_cuda` | 3.12, `/opt/venv` |
+| Python | 3.12.13 | 3.12 |
 | PyTorch / torchvision | 2.7.1+cu128 / 0.22.1+cu128 | 2.7.0 / 0.22.0, Jetson-compatible builds |
 | Ultralytics | 8.4.46 | 8.4.46, CBRS detector dependency |
 | NumPy / SciPy | 2.2.4 / 1.14.1 | 2.2.4 / 1.17.1 |
@@ -164,8 +163,8 @@ weights. Use this project's asset package; the MDI and RT packages are independe
 
 From the repository root, prepare the environment and install the assets:
 
-On the PC, activate `torch270_py312_cuda` if it is already available. For a new
-environment, use Python 3.12 and install platform-compatible PyTorch first.
+On the PC, use Python 3.12 and install platform-compatible PyTorch first.
+You may use Conda or a virtual environment with any name and location.
 `requirements.txt` supplies the remaining dependencies and selects the PC or
 aarch64 Jetson SciPy rendering version.
 

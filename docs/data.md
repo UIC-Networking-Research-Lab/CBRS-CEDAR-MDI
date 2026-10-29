@@ -67,7 +67,7 @@ You can pass a different location with `--base-dir` (generator) or by editing
 
 Spectrogram pixels depend on library versions and parameters. Use the supplied
 PNGs directly for training and quality evaluation. If regenerating them, the
-tested PC rendering profile (`torch270_py312_cuda`) is:
+tested PC rendering profile is:
 
 ```
 numpy==2.2.4  scipy==1.14.1  matplotlib==3.10.8  pillow==11.2.1

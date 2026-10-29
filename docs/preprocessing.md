@@ -23,7 +23,7 @@ consistently and retrain your own model**. Keep the same preprocessing at deploy
 
 The tested renderer profiles differ between the PC and Jetson:
 
-| Library | PC: `torch270_py312_cuda` | Jetson: `/opt/venv` |
+| Library | PC renderer | Jetson renderer |
 |---|---|---|
 | NumPy | 2.2.4 | 2.2.4 |
 | SciPy | 1.14.1 | 1.17.1 |

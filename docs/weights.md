@@ -29,7 +29,7 @@ with this asset package so a fresh checkout recognizes the complete weight set.
 The download contains only datasets, weights, `splits.csv` and a README.
 
 The three 20×20, 100%-coverage models were also re-evaluated on the full test
-split in the PC `torch270_py312_cuda` environment. Their mAP@0.5 and overlap F1
+split on the PC GPU with the training software versions. Their mAP@0.5 and overlap F1
 exactly match the corresponding recorded sweep values. The other configurations
 passed checkpoint/architecture checks; their full quality sweep was not rerun.
 

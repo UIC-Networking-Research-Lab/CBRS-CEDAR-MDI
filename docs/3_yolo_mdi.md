@@ -43,7 +43,7 @@ are token-bucket settings, not measured Wi-Fi link capacities.
 
 This environment applies to **both the single-Jetson local speed baseline and
 multi-Jetson MDI**. Model training and the CEDAR-YOLO quality sweep instead use
-the PC Conda environment `torch270_py312_cuda` ([comparison](../README.md#experiment-environments)).
+the PC GPU software configuration ([comparison](../README.md#experiment-environments)).
 
 This testbed uses the same environment as
 [CAMDI_RC_MobiHoc2026_Fitting_and_Jetson](https://github.com/UIC-Networking-Research-Lab/CAMDI_RC_MobiHoc2026_Fitting_and_Jetson).
@@ -53,7 +53,7 @@ record these versions:
 | Component | Jetson reference |
 |---|---|
 | System | NVIDIA L4T r36.4.0, aarch64 |
-| Python | 3.12, virtual environment `/opt/venv` |
+| Python | 3.12 |
 | PyTorch / torchvision | 2.7.0 / 0.22.0, Jetson-compatible builds |
 | NumPy / SciPy | 2.2.4 / 1.17.1 |
 | Matplotlib / Pillow | 3.10.8 / 11.2.1 |
@@ -75,7 +75,7 @@ CUDA wheels cannot be used on a Jetson.
 Run on **each** device, from the repository root:
 
 ```bash
-source /opt/venv/bin/activate
+# Activate your Python 3.12 environment before running these commands.
 cat /etc/nv_tegra_release
 python --version
 python -c "import torch, torchvision; print(torch.__version__, torchvision.__version__)"

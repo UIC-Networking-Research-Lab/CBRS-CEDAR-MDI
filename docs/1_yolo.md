@@ -11,7 +11,7 @@ the released weights in `trained_models/` ([weights.md](weights.md)) if you skip
 
 ## 1. Training
 
-Train on the **PC GPU**, using the tested Conda environment `torch270_py312_cuda`.
+Train on the **PC GPU**, using Python 3.12 and CUDA-compatible PyTorch (tested: 2.7.1+cu128).
 The [environment table](../README.md#experiment-environments) records its versions.
 Jetson is used for the local speed baseline and MDI, not for training.
 
@@ -64,7 +64,7 @@ the frequency intervals of any LTE box and any radar box intersect.
 ## 3. End-to-end inference from raw I/Q (paper protocol)
 
 Run this timing experiment on **one Jetson Orin Nano CPU in FP32**, in the same
-`/opt/venv` environment used by MDI. See the [Jetson setup](3_yolo_mdi.md#environment-on-every-node).
+software configuration used by MDI. See the [Jetson setup](3_yolo_mdi.md#environment-on-every-node).
 PC PNG inference is a separate workload and does not reproduce the Jetson baseline speed.
 
 `local_sigmf_baseline.py` runs the full pipeline on one device, one frame at a time:
