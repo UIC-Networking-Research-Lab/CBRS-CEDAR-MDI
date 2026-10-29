@@ -87,10 +87,15 @@ These PC sweep weights belong only to the MDI asset package, not RT.
 
 ## Raw I/Q and preprocessing
 
-Raw I/Q recordings are not included. Download the over-the-air radar/LTE dataset
+For a quick CEDAR-YOLO test, use the supplied PNGs directly. Raw I/Q recordings
+are needed only for raw-frame input, spectrogram regeneration or end-to-end tests
+starting from preprocessing. Download the over-the-air radar/LTE dataset
 from [Genesys Lab](https://genesys-lab.org/CBRS). It contains overlapping and
 non-overlapping signals. Follow its terms and cite the dataset paper. Restore the
-paper's fixed raw-data split using the repository command:
+paper's fixed raw-data split using the repository command below. **The original
+recordings have no train/validation/test partition matching our experiments.**
+The command uses `splits/cbrs_split.csv`, supplied as `splits.csv` in the assets;
+do not replace it with a new random split:
 
 ```bash
 python reproduce.py --task raw-split --raw-source /path/to/IEEE_UPLOAD

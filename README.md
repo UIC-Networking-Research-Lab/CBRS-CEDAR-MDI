@@ -115,6 +115,25 @@ timing also use different checkpoint editions; see [weights](docs/weights.md).
 
 ## Quick start: use our PNGs and pretrained models
 
+**For a quick CEDAR-YOLO quality test, download the assets below and use our
+already-converted spectrogram PNGs.** They include labels and the fixed
+train/validation/test split; no raw-I/Q download or preprocessing is needed.
+Use the latest PC checkpoints for CEDAR-YOLO quality evaluation:
+
+```bash
+# After installing dependencies and the assets as described below:
+python reproduce.py --task png --weights latest --device 0 --models sig_yolo_v8n_f20t20_c100
+```
+
+Download the [Genesys Lab over-the-air CBRS dataset](https://genesys-lab.org/CBRS)
+only if you need the original raw-I/Q frames, want to regenerate spectrograms,
+or want to test the full pipeline starting with preprocessing (including Jetson
+local/MDI timing). **The original recordings do not come with our train,
+validation and test partitions.** Restore them using our
+[fixed split list](splits/cbrs_split.csv), also supplied as `splits.csv` in the
+assets. Do not generate a new random split when reproducing the reported results.
+See [raw-data preparation](docs/data.md#5-build-the-raw-sigmf-split).
+
 **[Download CBRS-CEDAR-MDI-ASSETS v1.0 from GitHub Releases](https://github.com/UIC-Networking-Research-Lab/CBRS-CEDAR-MDI/releases/tag/assets)**
 
 1. Open the release's **Assets** list and download **all 9 archive parts**:
@@ -209,7 +228,9 @@ New training writes `trained_models_retrained/`, keeping released weights intact
 
 Raw-I/Q timing and MDI need the original recordings. Download the
 [Genesys Lab over-the-air CBRS dataset](https://genesys-lab.org/CBRS), then restore the
-**provided** train/validation/test split rather than choosing a new random split:
+**provided** train/validation/test split rather than choosing a new random split.
+The original download contains recordings without these partitions; the command
+below applies `splits/cbrs_split.csv` (the assets' `splits.csv`):
 
 ```bash
 python reproduce.py --task raw-split --raw-source /path/to/IEEE_UPLOAD

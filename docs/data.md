@@ -2,7 +2,9 @@
 
 ## Fastest reproduction route: supplied PNGs
 
-Install the separate `CBRS-CEDAR-MDI-ASSETS` download with:
+For a quick CEDAR-YOLO quality test, use the prepared spectrograms in the
+[CBRS-CEDAR-MDI-ASSETS release](https://github.com/UIC-Networking-Research-Lab/CBRS-CEDAR-MDI/releases/tag/assets).
+Install them with:
 
 ```bash
 python reproduce.py --assets ../CBRS-CEDAR-MDI-ASSETS --task install
@@ -30,6 +32,14 @@ every experiment:
 | `raw_sigmf_split/` | the same frames as raw SigMF pairs, split into `train/`, `validation/`, `test/` | end-to-end raw-I/Q inference (local and MDI) |
 
 ## 1. Download the raw dataset
+
+**Only needed for raw-I/Q inputs, spectrogram regeneration or full-pipeline
+preprocessing/timing tests.** The original Genesys recordings are not partitioned
+into our training, validation and test sets. Use
+[`splits/cbrs_split.csv`](../splits/cbrs_split.csv), identical to the assets'
+`splits.csv`, to restore the exact membership. The supplied PNGs are already split.
+For raw-frame restoration, follow [step 5](#5-build-the-raw-sigmf-split);
+for regenerated PNGs, follow [step 4](#4-build-the-trainvaltest-split).
 
 Download *"Real-world Radar and LTE Signals Dataset Collected Over-the-air in
 Shared CBRS Band"* from <https://genesys-lab.org/CBRS>. Place the four LTE-bandwidth
@@ -113,7 +123,8 @@ every model and result in the paper:
 | test | 848 (558 overlapping, 290 non-overlapping) |
 
 Within each LTE-bandwidth group, the frames were split 70/15/15 at random.
-Set `USE_SPLIT_MANIFEST = False` at the top of the script to draw a new random split instead.
+Keep `USE_SPLIT_MANIFEST = True` when reproducing the paper. A new random split
+changes the evaluation set and is a different experiment.
 
 ## 5. Build the raw SigMF split
 
