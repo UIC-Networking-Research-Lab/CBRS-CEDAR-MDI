@@ -1,7 +1,7 @@
 model,parameters,inference_s,task_delay_s,overlap_f1,map50,result_source
-YOLOv8n,3011238,0.26559994918544655,1.1812673423691589,0.9973045822102425,0.995,local_test/local_baseline_results_FastSigmf_cpu/sweep_summary.csv
-CEDAR-YOLO-n,1851778,0.17764010680070674,1.053342483923349,0.9946043165467626,0.8946251534161922,local_baseline_results_by_stage_cost_asym_yolo/sweep_summary.csv
-YOLOv8s,11136374,0.5848974651327705,1.4890299095103092,0.9991031390134528,0.995,local_test/local_baseline_results_FastSigmf_cpu/sweep_summary.csv
-CEDAR-YOLO-s,7267378,0.4313920118125105,1.3096216602323107,0.9991047448522828,0.995,local_baseline_results_by_stage_cost_asym_yolo/sweep_summary.csv
-YOLOv8x,68154534,3.205220354451259,4.122770106791818,0.9945945945945946,0.995,local_test/local_baseline_results_FastSigmf_cpu/sweep_summary.csv
-CEDAR-YOLO-x,29172802,2.593051239668631,3.4544452562700565,1.0,0.995,local_baseline_results_by_stage_cost_asym_yolo/sweep_summary.csv
+YOLOv8n,3011238,0.26559994918544655,1.1812673423691589,0.9973045822102425,0.995,local_test\local_baseline_results_FastSigmf_cpu\sweep_summary.csv
+CEDAR-YOLO-n,1851778,0.17764010680070674,1.053342483923349,0.9946043165467626,0.8946251534161922,local_baseline_results_by_stage_cost_asym_yolo\sweep_summary.csv
+YOLOv8s,11136374,0.5848974651327705,1.4890299095103092,0.9991031390134528,0.995,local_test\local_baseline_results_FastSigmf_cpu\sweep_summary.csv
+CEDAR-YOLO-s,7267378,0.4313920118125105,1.3096216602323107,0.9991047448522828,0.995,local_baseline_results_by_stage_cost_asym_yolo\sweep_summary.csv
+YOLOv8x,68154534,3.205220354451259,4.122770106791818,0.9945945945945946,0.995,local_test\local_baseline_results_FastSigmf_cpu\sweep_summary.csv
+CEDAR-YOLO-x,29172802,2.593051239668631,3.4544452562700565,1.0,0.995,local_baseline_results_by_stage_cost_asym_yolo\sweep_summary.csv

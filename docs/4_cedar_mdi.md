@@ -33,6 +33,31 @@ bottleneck τ, the largest per-node compute or per-link transfer time, from the
 profiles. Candidates are ranked by τ, with the total compute plus transfer time as the
 tie-breaker. The runtime then deploys the top K = 3 candidates.
 
+This is the optimization in paper Section V-C, using the pipeline model from
+Section III-A. For a fixed model, compressor and network environment, a policy
+p defines the stage groups and their assignment along the node route. We solve
+
+$$
+\min_{p\in\mathcal{P}}\;\max\left\{
+\max_{v\in\mathcal{V}}\sum_{s\in\mathcal{S}_v(p)}t_s,
+\max_{\ell\in\mathcal{L}}\frac{b_\ell(p)r_\ell(p,q)}{B_\ell}
+\right\}.
+$$
+
+Here, t is profiled stage compute time, b is uncompressed boundary size, r is
+compressed/uncompressed size ratio, and B is measured effective link rate.
+Uncompressed boundaries and the detection return use r = 1. Minimizing the
+bottleneck maximizes estimated throughput; it does not minimize individual-frame
+end-to-end delay. The reference stage chain has 165 feasible partitions per model
+and bandwidth environment. Candidate policies are estimated offline, and only
+the top three are deployed for each setting.
+
+Stage times and payload sizes use medians from local profiles. Preliminary MDI
+runs provide per-link effective rates and payload-specific compression ratios;
+the pooled median ratio is used when a boundary lacks its own compression profile.
+Eligible input/model tensors are compressed. Earlier preprocessing outputs and
+the final detection return are sent uncompressed.
+
 The supplied rankings are ready to use for the reference experiment. To regenerate
 them offline from the supplied profiles:
 
@@ -110,7 +135,7 @@ Useful options (node A):
 |---|---|
 | `--model_name sig_yolo_v8x_f20t20_c100` | one model instead of all three |
 | `--compressor` / `--compression_param` | as in part 3, e.g. `--compressor quantization --compression_param int8`, or `--compressor none` |
-| `--sweep_rates_mbps` | link rates (default `150,50,25`) |
+| `--sweep_rates_mbps` | token-bucket settings for high/medium/low environments (default `150,50,25`); not measured link capacities |
 | `--partition_top_k` | number of ranked partitions to deploy per setting (default 3) |
 | `--partition_json` | run one fixed partition file instead of the rankings |
 | `--models_dir` | checkpoint directory on each node (default `trained_models_mdi`) |
@@ -156,7 +181,8 @@ improve the former while increasing the latter. The included
 
 Four Jetson Orin Nano nodes, CPU, full 848-frame test split, 63 runs per model
 (7 compression settings × 3 bandwidth environments × 3 ranked partitions).
-The table summarizes the runs whose overlap F1 is within 0.01 of local execution:
+The table summarizes runs within 0.01 overlap F1 of local execution to exclude
+policies with severe quality degradation. Figure 9 includes all policies:
 
 | Model | Local time per frame (s) | Runs kept | Throughput vs. local | Task delay vs. local |
 |---|---:|---:|---:|---:|
@@ -168,10 +194,16 @@ The table summarizes the runs whose overlap F1 is within 0.01 of local execution
   four nodes, so the per-frame task delay grows. Throughput here is the number of frames
   divided by the total run time.
 * Preprocessing dominates the n and s pipelines, so distributing their small models
-  changes little. The x model gains the most. INT8 at high bandwidth gives the largest
+  offers smaller gains than for x. INT8 at high bandwidth gives the largest
   speed-up (3.27×) while keeping the local overlap quality.
 * Uncompressed runs and the hybrid compressor match the local overlap F1 in every
   environment and for every candidate. INT4 and top-k depend on where the cut is placed.
+
+The highest-speed-up case is extra-large, INT8, high bandwidth, R3: 0.948 frames/s
+versus 0.289 locally, with overlap F1 = 1.000 in both cases. Its maximum observed
+frame delay is 7.1 s; across quality-retained policies, the maximum is 16.1 s.
+The [full report](../results/REPORT.md#4-cedar-mdi) also compares transferred
+payload and compute balance against original-YOLO module-boundary MDI.
 
 Data: [`results/paper/cedar_yolo_mdi_comparison_data.csv`](../results/paper/cedar_yolo_mdi_comparison_data.csv),
 [`results/paper/cedar_mdi_timing_summary.csv`](../results/paper/cedar_mdi_timing_summary.csv).

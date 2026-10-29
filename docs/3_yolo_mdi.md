@@ -234,32 +234,37 @@ python scripts/plots/plot_yolo_mdi_vs_local.py \
     --output_dir distributed_vs_baseline_plots
 ```
 
-## 5. Reference results
+## 5. Reference results (paper Figure 5)
 
-Uncompressed MDI on the full test split, compared with local execution on one Jetson
-(paper, Section "Uncompressed and Compressed MDI"). Task delay is in seconds per frame.
+![Original-YOLO MDI: partitions, overlap F1 and inference time per frame](figures/yolo_mdi_bandwidth_comparison.png)
 
-| Model | Local delay | MDI delay, high bandwidth | Ratio | Payload per frame (MB) | Overlap F1 (local = MDI) |
-|---|---:|---:|---:|---:|---:|
-| YOLOv8n | 1.181 | 2.573 | 2.2× | 10.7 | 0.997 |
-| YOLOv8s | 1.489 | 3.846 | 2.6× | 16.4 | 0.999 |
-| YOLOv8x | 4.123 | 11.917 | 2.9× | 31.5 | 0.995 |
-| YOLO11n | 1.142 | 2.709 | 2.4× | 12.3 | 0.997 |
-| YOLO11s | 1.452 | 6.343 | 4.4× | 19.7 | 1.000 |
-| YOLO11x | 3.839 | 17.430 | 4.5× | 46.7 | 0.995 |
-| YOLO26n | 1.226 | 2.761 | 2.3× | 12.3 | 0.998 |
-| YOLO26s | 1.593 | 6.492 | 4.1× | 19.7 | 0.995 |
-| YOLO26x | 4.168 | 18.023 | 4.3× | 46.7 | 0.991 |
+The timing bars show **inference time per frame = 1 / throughput**, including
+pipeline filling and draining. Gray bars show the single-Jetson local baseline.
+This metric differs from the mean end-to-end delay recorded in the output CSVs.
+The top-left panel shows the module-boundary assignment; the top-right panel
+reports overlap F1 at high bandwidth.
 
-* Uncompressed MDI keeps the local quality exactly. Its task delay is 2.2–4.5× the local
-  value at high bandwidth and 7.8–14.5× at low bandwidth.
-* With compression (first 100 test frames), every detector and compressor is still
-  slower than local execution, at no less than 1.34× the local delay.
-* INT8 cuts the payload to 25 % and the delay relative to uncompressed MDI by up to
-  64 / 76 / 82 % at high / medium / low bandwidth. Overlap F1 changes by at most 0.005.
-* The hybrid compressor keeps the payload at about 30 % and matches the uncompressed F1.
-  Top-k at 25 % or 50 % retention lowers F1, and INT4 lowers the F1 of YOLO26 to 0.20–0.80.
+The local/compressed comparison uses the first 100 test frames. Uncompressed
+F1 is recomputed for the corresponding subset of its full run, while its
+throughput is taken from the full run, following the paper's protocol.
 
-Data: [`results/paper/yolo_mdi_vs_local_results.csv`](../results/paper/yolo_mdi_vs_local_results.csv),
-[`results/paper/yolo_mdi_bandwidth_comparison_data.csv`](../results/paper/yolo_mdi_bandwidth_comparison_data.csv),
-[`results/paper/yolo_module_boundary_summary.csv`](../results/paper/yolo_module_boundary_summary.csv).
+- Uncompressed MDI preserves local overlap F1 and mAP@0.5 on the full test set.
+  Throughput is 1.25-2.07× local at high bandwidth, but only 0.41-0.77× at low bandwidth.
+- INT8 reduces payload to about 25%, changes overlap F1 by at most 0.005 and
+  exceeds local throughput for every detector. Its largest throughput gains over
+  uncompressed MDI are 59%, 177% and 264% at high, medium and low bandwidth.
+- Hybrid compression transmits about 30% of the payload and matches uncompressed
+  F1. Top-k at 25% or 50% reduces F1; INT4 lowers YOLO26 F1 to 0.20-0.80.
+  The small INT4 quality differences between bandwidth environments come from
+  stochastic rounding. The original-YOLO partition itself is fixed.
+- The structural bottlenecks remain: three feature tensors cross each inner
+  model boundary, and the extra-large backbone carries 41-44% of computation.
+  Compression reduces transfer cost but does not rebalance this fixed partition.
+
+See the [full report](../results/REPORT.md#3-original-yolo-mdi) for payload,
+throughput and end-to-end delay comparisons. In particular, a higher end-to-end
+delay does not imply lower throughput in a pipelined execution.
+
+Data: [full-test local/MDI comparison](../results/paper/yolo_mdi_vs_local_results.csv),
+[compression sweep](../results/paper/yolo_mdi_bandwidth_comparison_data.csv),
+[payload and delay summary](../results/paper/yolo_module_boundary_summary.csv).

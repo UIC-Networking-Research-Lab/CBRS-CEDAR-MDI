@@ -1,6 +1,7 @@
 # Part 2 – CEDAR-YOLO: training and inference
 
-CEDAR-YOLO removes the multi-scale neck of YOLO. A YOLOv8-style backbone feeds an
+CEDAR-YOLO uses RF-aware structured pruning to remove the multi-scale neck and
+redundant detection scales of YOLO. A YOLOv8-style backbone feeds an
 asymmetric SPPF (3×5 time×frequency pooling) and a single detection head with factorized
 1×5 frequency and 3×1 time convolutions. The numbers of frequency and time cells of the
 output grid are set independently, and each backbone stage downsamples one or both
@@ -112,7 +113,11 @@ The sweep covers 108 configurations on the test set: 3 scales × 3 frequency gri
 × 3 time grids × 4 coverage levels. At 25 % coverage the distribution bins cannot
 span the boxes, so mAP@0.5 is 0. From 50 % coverage onward, the x model reaches
 mAP@0.5 ≥ 0.925 on every grid. The 20×20 grid performs best or ties for best, so it is
-used for all other experiments.
+used for the local comparison and MDI experiments.
+The axes affect the smaller models differently: at full coverage, coarse time
+grids preserve high overlap F1 across frequency resolutions. Finer grids also
+require fewer backbone downsampling stages, changing model capacity as well as
+spatial resolution.
 Data: [`results/paper/cedar_yolo_sweep_data.csv`](../results/paper/cedar_yolo_sweep_data.csv).
 
 ### CEDAR-YOLO vs. YOLOv8 (20×20 grid, 100 % coverage)

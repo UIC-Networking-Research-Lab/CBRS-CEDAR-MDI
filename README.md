@@ -4,48 +4,86 @@
 **"CEDAR-MDI: CBRS-Oriented Edge-Distributed Architecture for Radar Detection with Model-Distributed Inference"**
 Teng Li and Hulya Seferoglu, University of Illinois Chicago (manuscript under submission).
 
-We detect radar/LTE signals as objects in spectrograms, simplify YOLO for edge execution,
-and distribute the resulting detector across Jetson nodes.
+We detect radar and LTE signals as objects in spectrograms and accelerate the
+complete sensing pipeline on a physical NVIDIA Jetson Orin Nano testbed.
 
-- **CBRS detection:** raw I/Q → spectrogram → radar/LTE boxes → frequency-overlap decision.
-- **CEDAR-YOLO:** a single-scale detector with fewer parameters and smaller activation transfers.
-- **CEDAR-MDI:** offline model partitioning and node assignment with activation compression.
+- **CBRS detection pipeline:** raw I/Q preprocessing, spectrogram generation, YOLO
+  training and inference, and a frame-level frequency-overlap decision.
+- **CEDAR-YOLO:** RF-aware structured pruning removes the multi-scale fusion neck
+  and redundant detection scales. Independently configurable frequency/time grids
+  and single-tensor block boundaries reduce computation and simplify partitioning.
+- **CEDAR-MDI:** activation compression and offline partition/node-assignment
+  optimization balance computation and communication to increase throughput.
 
 ## Results at a glance
 
-Training and the CEDAR-YOLO architecture/quality sweep run on the **PC GPU**.
-Local speed baselines and all MDI experiments run on **NVIDIA Jetson Orin Nano CPUs**;
-local and distributed comparisons use matching checkpoints. The four guides link each experiment's source CSV.
+These results follow the current manuscript's Table I and Figures 1-9.
+Training and the CEDAR-YOLO quality sweep run on the **PC GPU**. Local timing and
+all MDI experiments run on **Jetson CPUs in FP32**. Local/MDI comparisons use
+matching checkpoints; the architecture-quality sweep uses the later PC edition.
 
-**[Read the full experiment report — figures, tables and source data](results/REPORT.md).**
-No dataset, weights or experiment rerun is needed to view these recorded results.
+**[Full experiment report: paper figures, tables, metrics and source data](results/REPORT.md).**
+The recorded results can be viewed without downloading datasets or weights.
 
 | Experiment | Main result | Reproduction guide |
 |---|---|---|
-| Original YOLO | Overlap F1 ≥ 0.991 across nine detectors | [YOLO training and inference](docs/1_yolo.md) |
-| CEDAR-YOLO | 35–57% fewer parameters and 16–33% less model execution time; high detection quality | [CEDAR-YOLO training and inference](docs/2_cedar_yolo.md) |
-| Original-YOLO MDI | Module-boundary partitioning increases per-frame end-to-end latency; activation compression reduces transfer cost | [Original-YOLO MDI](docs/3_yolo_mdi.md) |
-| CEDAR-MDI | Up to **3.27× local throughput** with overlap F1 within 0.01 of local execution | [CEDAR-MDI](docs/4_cedar_mdi.md) |
+| Original YOLO | All nine detectors achieve overlap F1 above 0.99 | [YOLO training and inference](docs/1_yolo.md) |
+| Original-YOLO MDI | INT8 exceeds local throughput, but multi-tensor boundaries and uneven compute load limit scaling | [Original-YOLO MDI](docs/3_yolo_mdi.md) |
+| CEDAR-YOLO | 35-57% fewer parameters and 16-33% less model inference time, with matching mAP@0.5 to reported precision and overlap F1 differences below 0.006 | [CEDAR-YOLO](docs/2_cedar_yolo.md) |
+| CEDAR-MDI | Up to **3.27× local throughput**, with unchanged overlap F1 at the best configuration | [CEDAR-MDI](docs/4_cedar_mdi.md) |
 
-**CEDAR-YOLO: smaller models and less computation.** The left panel compares
-parameter counts and Jetson model execution time; the right panel shows detection quality.
-Timing is measured on Jetson with the earlier checkpoint edition; quality is measured
-on the PC with the later architecture-sweep edition.
+### Original YOLO: communication and load imbalance
 
-![CEDAR-YOLO model size, execution time and detection quality](docs/figures/cedar_yolo_local_comparison.png)
+![Paper Figure 5: original-YOLO partitioning, overlap quality and inference time per frame](docs/figures/yolo_mdi_bandwidth_comparison.png)
 
-**CEDAR-MDI: speed and overlap quality across three bandwidth environments.**
-Left: inference time per completed frame (`1 / throughput`, lower is better).
-Right: overlap F1 (higher is better). R1–R3 are the top three offline-ranked
-partition policies for each model, bandwidth environment and compressor.
+The top panels show the module-boundary partition and overlap F1. The bottom
+panels compare **inference time per frame (1 / throughput)** under high, medium
+and low bandwidth; gray bars are single-device local execution. INT8 improves
+throughput over uncompressed MDI by up to 59%, 177% and 264%, respectively, with
+an overlap-F1 change of at most 0.005. Every detector exceeds local throughput
+with INT8. Compression reduces transfers, but the fixed backbone/neck/head
+partition still leaves multiple tensors at each inner boundary and an overloaded
+backbone node.
 
-![CEDAR-MDI speed and overlap quality](docs/figures/cedar_yolo_mdi_comparison.png)
+### CEDAR-YOLO: a smaller single-scale detector
 
-**Throughput is not single-frame latency.** Pipelining completes more frames per second;
-each frame still traverses multiple nodes. Inference time per frame is `1 / throughput`.
-The [reference data](results/paper/) reports both this quantity and end-to-end latency.
-The CEDAR architecture sweep and Jetson runs use different checkpoint editions,
-identified in the [weight guide](docs/weights.md).
+![Paper Figure 8: CEDAR-YOLO parameter count, model inference time and quality](docs/figures/cedar_yolo_local_comparison.png)
+
+At a 20 × 20 grid and full regression coverage, CEDAR-YOLO reduces parameter
+counts by **39%, 35% and 57%**, and model inference time by **33%, 26% and 16%**
+for nano, small and extra-large, respectively. The left panel normalizes size and
+time to YOLOv8; the right compares mAP@0.5 and overlap F1. Timing uses the earlier
+Jetson checkpoint edition; quality uses the later PC sweep edition. The full
+[feature-grid and coverage sweep](results/REPORT.md#feature-grid-and-regression-coverage-sweep)
+explains the selected configuration.
+
+### CEDAR-MDI: partition flexibility and higher throughput
+
+![Paper Figure 9: CEDAR-MDI inference time per frame and overlap F1](docs/figures/cedar_yolo_mdi_comparison.png)
+
+Rows show the three bandwidth environments. Left: inference time per frame;
+right: overlap F1. Gray bars denote local execution. R1-R3 are the three
+highest-ranked policies **for each model, environment and compressor**, so they
+can represent different stage assignments. Legend payload percentages are the
+pooled median compressed/uncompressed size ratios used by the offline optimizer.
+
+The single-scale chain provides **165 feasible partitions** per model and
+bandwidth environment. Compared with module-boundary MDI of original YOLOv8,
+the paper reports up to **80% less transferred data**. Flexible cuts also balance
+work across nodes. At the extra-large scale, CEDAR-MDI reaches **0.95 frames/s**,
+compared with at most **0.53 frames/s** for original-YOLO module-boundary MDI.
+
+The best speed-up is **3.27×** with extra-large CEDAR-YOLO, INT8, high bandwidth
+and candidate R3, while overlap F1 remains **1.000**. The aggregate comparison
+retains policies within 0.01 overlap F1 of local execution, excluding severe
+quality degradation; all configurations remain visible in the figure.
+
+**Throughput and single-frame delay are different metrics.** The plotted time is
+total run time divided by completed frames, including pipeline fill and drain.
+Pipelining raises throughput while increasing an individual frame's end-to-end
+delay. The maximum observed delay is **7.1 s** in the best-speed-up configuration
+and **16.1 s** across the quality-retained configurations. See the
+[full report](results/REPORT.md#4-cedar-mdi) for latency, payload and load-balance results.
 
 ## Experiment environments
 
