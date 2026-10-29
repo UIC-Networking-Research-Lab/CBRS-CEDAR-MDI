@@ -2,7 +2,8 @@
 
 The **CBRS-CEDAR-MDI-ASSETS** download stores each checkpoint edition separately.
 Install it with `python reproduce.py --assets ../CBRS-CEDAR-MDI-ASSETS --task install`.
-The cloud-drive link will be added after upload.
+Download all 9 parts from the [assets v1.0 release](https://github.com/UIC-Networking-Research-Lab/CBRS-CEDAR-MDI/releases/tag/assets) and
+follow the [extraction instructions](download_bundle.md#download-and-extract).
 
 | Bundle directory | Installed MDI path | Intended experiments |
 |---|---|---|

@@ -77,6 +77,36 @@ timing also use different checkpoint editions; see [weights](docs/weights.md).
 
 ## Quick start: use our PNGs and pretrained models
 
+**[Download CBRS-CEDAR-MDI-ASSETS v1.0 from GitHub Releases](https://github.com/UIC-Networking-Research-Lab/CBRS-CEDAR-MDI/releases/tag/assets)**
+
+1. Open the release's **Assets** list and download **all 9 archive parts**:
+   `CBRS-CEDAR-MDI-ASSETS.7z.001` through `CBRS-CEDAR-MDI-ASSETS.7z.009`.
+   Keep all parts in the same folder with their original names.
+2. Use **7-Zip** to extract `CBRS-CEDAR-MDI-ASSETS.7z.001` only. It reads the remaining
+   parts automatically; do not extract each part separately.
+3. Place the extracted `CBRS-CEDAR-MDI-ASSETS` folder beside the repository:
+
+```text
+workspace/
+  CBRS-CEDAR-MDI/
+  CBRS-CEDAR-MDI-ASSETS/
+    datasets/
+    weights/
+    splits.csv
+    README.md
+```
+
+Alternatively, extract from the folder containing all parts with:
+
+```bash
+7z x CBRS-CEDAR-MDI-ASSETS.7z.001
+```
+
+GitHub's **Source code (zip/tar.gz)** downloads contain code, not the datasets or
+weights. Use this project's asset package; the MDI and RT packages are independent.
+
+From the repository root, prepare the environment and install the assets:
+
 On the PC, activate `torch270_py312_cuda` if it is already available. For a new
 environment, use Python 3.12 and install platform-compatible PyTorch first.
 `requirements.txt` supplies the remaining dependencies and selects the PC or
@@ -91,8 +121,8 @@ python reproduce.py --task png --weights jetson
 
 The **CBRS-CEDAR-MDI-ASSETS** download contains `datasets/`, `weights/`, `splits.csv`
 and a README. It includes all 640 × 640 PNGs, labels, fixed split membership and pretrained
-weights, and is independent of the RT project's download. It is distributed separately from Git; the cloud-drive
-URL will be added when the bundle is uploaded. See [data](docs/data.md) and
+weights, and is independent of the RT project's download. See the
+[download guide](docs/download_bundle.md), [data](docs/data.md) and
 [weights](docs/weights.md) for the layout. PNG evaluation requires no raw I/Q download.
 The bundle also includes all **108 PC CEDAR quality/sweep checkpoints** from
 `trained_models_cedar_best`. After installation, use `--weights latest --device 0`

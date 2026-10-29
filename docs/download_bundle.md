@@ -3,6 +3,38 @@
 Data and pretrained models for the **CBRS-CEDAR-MDI paper reproduction repository**.
 This download is independent of the RT deployment project's asset package.
 
+## Download and extract
+
+**[Download CBRS-CEDAR-MDI-ASSETS v1.0 from GitHub Releases](https://github.com/UIC-Networking-Research-Lab/CBRS-CEDAR-MDI/releases/tag/assets)**
+
+1. Open the release's **Assets** list and download **all 9 archive parts**:
+   `CBRS-CEDAR-MDI-ASSETS.7z.001` through `CBRS-CEDAR-MDI-ASSETS.7z.009`.
+   Keep all parts in the same folder with their original names.
+2. Use **7-Zip** to extract `CBRS-CEDAR-MDI-ASSETS.7z.001` only. It reads the remaining
+   parts automatically; do not extract each part separately.
+3. Place the extracted `CBRS-CEDAR-MDI-ASSETS` folder beside the repository:
+
+```text
+workspace/
+  CBRS-CEDAR-MDI/
+  CBRS-CEDAR-MDI-ASSETS/
+    datasets/
+    weights/
+    splits.csv
+    README.md
+```
+
+Alternatively, extract from the folder containing all parts with:
+
+```bash
+7z x CBRS-CEDAR-MDI-ASSETS.7z.001
+```
+
+GitHub's **Source code (zip/tar.gz)** downloads contain code, not the datasets or
+weights. Use this project's asset package; the MDI and RT packages are independent.
+
+## Package contents
+
 ```text
 CBRS-CEDAR-MDI-ASSETS/
   datasets/
