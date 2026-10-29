@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "range_convention": "[start, end)",
+  "description": "Fixed four-node module-boundary partition plans. Cutpoints only occur between unsplit modules, and payload specs describe the minimum tensors needed at each edge.",
+  "fixed_node_roles": {
+    "A": "preprocess",
+    "B": "backbone",
+    "C": "neck_or_encoder",
+    "D": "head_or_decoder_postprocess"
+  },
+  "preprocess": {
+    "node": "A",
+    "stages": [
+      "pre_read_iq",
+      "pre_spectrogram",
+      "pre_fftshift_log",
+      "pre_percentile_clip",
+      "pre_canvas_render",
+      "pre_canvas_to_rgb",
+      "pre_to_tensor"
+    ],
+    "output_name": "image_tensor",
+    "local_cost_bytes_field": "pre_to_tensor_bytes"
+  },
+  "families": {
+    "yolo8": {
+      "layer_count": 23,
+      "modules": {
+        "backbone": {
+          "node": "B",
+          "layer_range": [
+            0,
+            10
+          ],
+          "output_layer": 9
+        },
+        "neck": {
+          "node": "C",
+          "layer_range": [
+            10,
+            22
+          ],
+          "output_layer": 21
+        },
+        "head": {
+          "node": "D",
+          "layer_range": [
+            22,
+            23
+          ],
+          "postprocess_on_node": true
+        }
+      },
+      "edges": {
+        "A_to_B": {
+          "src": "A",
+          "dst": "B",
+          "payload": "image_tensor",
+          "local_cost_bytes_field": "pre_to_tensor_bytes",
+          "transfer_layers": []
+        },
+        "B_to_C": {
+          "src": "B",
+          "dst": "C",
+          "payload": "backbone_to_neck",
+          "logical_names": {
+            "4": "P3",
+            "6": "P4",
+            "9": "P5"
+          },
+          "local_cost_bytes_field": "model_backbone_to_neck_bytes",
+          "transfer_layers": [
+            4,
+            6,
+            9
+          ]
+        },
+        "C_to_D": {
+          "src": "C",
+          "dst": "D",
+          "payload": "neck_to_head",
+          "logical_names": {
+            "15": "N3",
+            "18": "N4",
+            "21": "N5"
+          },
+          "local_cost_bytes_field": "model_neck_bytes",
+          "transfer_layers": [
+            15,
+            18,
+            21
+          ]
+        },
+        "D_to_A": {
+          "src": "D",
+          "dst": "A",
+          "payload": "detections",
+          "local_cost_bytes_field": "post_raw_decode_bytes",
+          "transfer_layers": []
+        }
+      },
+      "node_modules": {
+        "B": "backbone",
+        "C": "neck",
+        "D": "head"
+      }
+    },
+    "yolo11_26": {
+      "layer_count": 24,
+      "modules": {
+        "backbone": {
+          "node": "B",
+          "layer_range": [
+            0,
+            11
+          ],
+          "output_layer": 10
+        },
+        "neck": {
+          "node": "C",
+          "layer_range": [
+            11,
+            23
+          ],
+          "output_layer": 22
+        },
+        "head": {
+          "node": "D",
+          "layer_range": [
+            23,
+            24
+          ],
+          "postprocess_on_node": true
+        }
+      },
+      "edges": {
+        "A_to_B": {
+          "src": "A",
+          "dst": "B",
+          "payload": "image_tensor",
+          "local_cost_bytes_field": "pre_to_tensor_bytes",
+          "transfer_layers": []
+        },
+        "B_to_C": {
+          "src": "B",
+          "dst": "C",
+          "payload": "backbone_to_neck",
+          "logical_names": {
+            "4": "P3",
+            "6": "P4",
+            "10": "P5"
+          },
+          "local_cost_bytes_field": "model_backbone_to_neck_bytes",
+          "transfer_layers": [
+            4,
+            6,
+            10
+          ]
+        },
+        "C_to_D": {
+          "src": "C",
+          "dst": "D",
+          "payload": "neck_to_head",
+          "logical_names": {
+            "16": "N3",
+            "19": "N4",
+            "22": "N5"
+          },
+          "local_cost_bytes_field": "model_neck_bytes",
+          "transfer_layers": [
+            16,
+            19,
+            22
+          ]
+        },
+        "D_to_A": {
+          "src": "D",
+          "dst": "A",
+          "payload": "detections",
+          "local_cost_bytes_field": "post_raw_decode_bytes",
+          "transfer_layers": []
+        }
+      },
+      "node_modules": {
+        "B": "backbone",
+        "C": "neck",
+        "D": "head"
+      }
+    },
+    "rtdetr": {
+      "layer_count": 29,
+      "modules": {
+        "backbone": {
+          "node": "B",
+          "layer_range": [
+            0,
+            13
+          ],
+          "output_layer": 12
+        },
+        "encoder": {
+          "node": "C",
+          "layer_range": [
+            13,
+            28
+          ],
+          "output_layer": 27
+        },
+        "decoder": {
+          "node": "D",
+          "layer_range": [
+            28,
+            29
+          ],
+          "postprocess_on_node": true
+        }
+      },
+      "edges": {
+        "A_to_B": {
+          "src": "A",
+          "dst": "B",
+          "payload": "image_tensor",
+          "local_cost_bytes_field": "pre_to_tensor_bytes",
+          "transfer_layers": []
+        },
+        "B_to_C": {
+          "src": "B",
+          "dst": "C",
+          "payload": "backbone_to_encoder",
+          "logical_names": {
+            "3": "P3",
+            "7": "P4",
+            "12": "P5"
+          },
+          "local_cost_bytes_field": "model_backbone_to_encoder_bytes",
+          "transfer_layers": [
+            3,
+            7,
+            12
+          ]
+        },
+        "C_to_D": {
+          "src": "C",
+          "dst": "D",
+          "payload": "encoder_to_decoder",
+          "logical_names": {
+            "21": "E3",
+            "24": "E4",
+            "27": "E5"
+          },
+          "local_cost_bytes_field": "model_encoder_to_decoder_bytes",
+          "transfer_layers": [
+            21,
+            24,
+            27
+          ]
+        },
+        "D_to_A": {
+          "src": "D",
+          "dst": "A",
+          "payload": "detections",
+          "local_cost_bytes_field": "post_raw_decode_bytes",
+          "transfer_layers": []
+        }
+      },
+      "node_modules": {
+        "B": "backbone",
+        "C": "encoder",
+        "D": "decoder"
+      }
+    }
+  },
+  "models": {
+    "cbrs_yolo8n": {
+      "family": "yolo8"
+    },
+    "cbrs_yolo8s": {
+      "family": "yolo8"
+    },
+    "cbrs_yolo8x": {
+      "family": "yolo8"
+    },
+    "cbrs_yolo11n": {
+      "family": "yolo11_26"
+    },
+    "cbrs_yolo11s": {
+      "family": "yolo11_26"
+    },
+    "cbrs_yolo11x": {
+      "family": "yolo11_26"
+    },
+    "cbrs_yolo26n": {
+      "family": "yolo11_26"
+    },
+    "cbrs_yolo26s": {
+      "family": "yolo11_26"
+    },
+    "cbrs_yolo26x": {
+      "family": "yolo11_26"
+    },
+    "cbrs_rtdetr_l": {
+      "family": "rtdetr"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Raw dataset (download separately, see docs/data.md)
+IEEE_UPLOAD/
+*.sigmf-data
+*.sigmf-meta
+
+# Generated datasets and splits
+dataset_large/
+dataset_medium/
+dataset_small/
+yolo_split/
+raw_sigmf_split/
+_validation_tmp/
+
+# Model weights (download separately, see docs/weights.md)
+trained_models/
+trained_models_mdi/
+*.pt
+*.pth
+*.onnx
+*.engine
+yolov8*.pt
+yolo11*.pt
+yolo26*.pt
+rtdetr*.pt
+
+# Experiment outputs written by the scripts
+runs/
+yolo_results/
+asym_yolo_results/
+local_baseline_results*/
+distributed_stage_sweep_results*/
+mdi_local_test/
+experiment_reruns/
+distributed_vs_baseline_plots/
+asym_yolo_distributed_vs_baseline_plots/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+trained_models_retrained/
+*.pt.tmp

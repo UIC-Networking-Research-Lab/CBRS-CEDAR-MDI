@@ -1,0 +1,23 @@
+# Python 3.12. Install PyTorch first for your platform (CUDA / CPU / Jetson),
+# Desktop: torch 2.7.1 / torchvision 0.22.1; Jetson: 2.7.0 / 0.22.0.
+# Jetson setup and reference environment: docs/3_yolo_mdi.md.
+
+# Recommended/tested dependencies; compatible alternatives can be used for
+# training/inference. Raw-I/Q rendering is pixel-sensitive: preserve the selected
+# rendering profile below and its parameters (docs/preprocessing.md).
+numpy==2.2.4
+scipy==1.14.1; platform_machine != "aarch64"
+scipy==1.17.1; platform_machine == "aarch64"
+matplotlib==3.10.8
+pillow==11.2.1
+
+# Detectors
+ultralytics>=8.4.46,<9
+opencv-python
+pyyaml
+tqdm>=4.66,<5
+
+# Model-distributed inference (HTTP transport between nodes)
+flask>=3.0,<4
+werkzeug>=3.0,<4
+requests>=2.32,<3

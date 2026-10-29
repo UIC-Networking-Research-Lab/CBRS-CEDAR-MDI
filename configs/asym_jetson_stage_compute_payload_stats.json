@@ -1,0 +1,2819 @@
+{
+  "metadata": {
+    "bandwidth_stat": "median",
+    "byte_stat": "median",
+    "device": "cpu",
+    "input_folders": {
+      "distributed_results": {
+        "csv_count": 64,
+        "exists": true,
+        "files": [
+          {
+            "bytes": 47244,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.6941946,
+            "name": "distributedModule_FastSigmf_allmodels_jetson_cpu_compressor_sweep_rates[150,50,25]mbps_samples100_summary.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_allmodels_jetson_cpu_compressor_sweep_rates[150,50,25]mbps_samples100_summary.csv"
+          },
+          {
+            "bytes": 241562,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.6861906,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 241181,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.6631405,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 241219,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.6430404,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 235233,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.625001,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 234884,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.6064622,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 234937,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.5884867,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 236239,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.569365,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 235760,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.5508492,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 235918,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.5337834,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 236113,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.516244,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 235516,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.4962385,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 235832,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.477729,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 235151,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.4551473,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 234759,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.4381158,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 234844,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.419568,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 234757,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.3995376,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 234228,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.3810048,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 234391,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.363441,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 235003,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.3444037,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 234643,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.32283,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 234803,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.303816,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 245342,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.2832975,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 244968,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.2638202,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 245205,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.2457788,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 238988,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.2276154,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 238715,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.2031357,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 238796,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.1840992,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 239966,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.1635532,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 239580,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.1440704,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 239752,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.127025,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 240108,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.1094851,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 239582,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.091444,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 239686,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.0463295,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 239056,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.0282612,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 238490,
+            "modified": "2026-05-27T10:40:51",
+            "mtime": 1779896451.0091693,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 238782,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.988594,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 238644,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.964528,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 238130,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.9444401,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 238354,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.9243267,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 239076,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.9042838,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 238585,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.8861592,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 238780,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.867094,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 233762,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.8475757,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 233438,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.8290029,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 233503,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.8099666,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 227549,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.7904706,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 227204,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.7744334,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 227156,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.7558837,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 227705,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.7353427,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 227157,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.7183144,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 227431,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.6997297,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 228344,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.6827245,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 228091,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.6652472,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 228208,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.647214,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 225454,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.6299877,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 225242,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.6104045,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 225496,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.5943663,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 225233,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.574776,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 224975,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.557742,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 224930,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.5412688,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv"
+          },
+          {
+            "bytes": 226664,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.523227,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv"
+          },
+          {
+            "bytes": 226402,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.505648,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv"
+          },
+          {
+            "bytes": 226448,
+            "modified": "2026-05-27T10:40:50",
+            "mtime": 1779896450.4841113,
+            "name": "distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv",
+            "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv"
+          }
+        ],
+        "latest_csv_mtime": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym",
+        "total_csv_bytes": 14823194
+      },
+      "local_baseline": {
+        "csv_count": 7,
+        "exists": true,
+        "files": [
+          {
+            "bytes": 1284357,
+            "modified": "2026-05-20T03:07:49",
+            "mtime": 1779264469.7380898,
+            "name": "baseline_FastSigmf_sig_yolo_v8n_f20t20_c100_local_cpu.csv",
+            "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8n_f20t20_c100_local_cpu.csv"
+          },
+          {
+            "bytes": 1291542,
+            "modified": "2026-05-20T03:07:49",
+            "mtime": 1779264469.648908,
+            "name": "baseline_FastSigmf_sig_yolo_v8n_f20t20_c100_local_cuda.csv",
+            "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8n_f20t20_c100_local_cuda.csv"
+          },
+          {
+            "bytes": 1276468,
+            "modified": "2026-05-20T03:07:49",
+            "mtime": 1779264469.5588374,
+            "name": "baseline_FastSigmf_sig_yolo_v8s_f20t20_c100_local_cpu.csv",
+            "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8s_f20t20_c100_local_cpu.csv"
+          },
+          {
+            "bytes": 1284334,
+            "modified": "2026-05-20T03:07:49",
+            "mtime": 1779264469.4661922,
+            "name": "baseline_FastSigmf_sig_yolo_v8s_f20t20_c100_local_cuda.csv",
+            "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8s_f20t20_c100_local_cuda.csv"
+          },
+          {
+            "bytes": 1279326,
+            "modified": "2026-05-20T03:07:49",
+            "mtime": 1779264469.37552,
+            "name": "baseline_FastSigmf_sig_yolo_v8x_f20t20_c100_local_cpu.csv",
+            "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8x_f20t20_c100_local_cpu.csv"
+          },
+          {
+            "bytes": 1289306,
+            "modified": "2026-05-20T03:07:49",
+            "mtime": 1779264469.2835348,
+            "name": "baseline_FastSigmf_sig_yolo_v8x_f20t20_c100_local_cuda.csv",
+            "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8x_f20t20_c100_local_cuda.csv"
+          },
+          {
+            "bytes": 10217,
+            "modified": "2026-05-20T03:07:49",
+            "mtime": 1779264469.186104,
+            "name": "sweep_summary.csv",
+            "path": "local_baseline_results_by_stage_cost_asym_yolo/sweep_summary.csv"
+          }
+        ],
+        "latest_csv_mtime": "2026-05-20T03:07:49",
+        "path": "local_baseline_results_by_stage_cost_asym_yolo",
+        "total_csv_bytes": 7715550
+      },
+      "output": {
+        "csv_count": 4,
+        "exists": true,
+        "files": [
+          {
+            "bytes": 558336,
+            "modified": "2026-05-30T04:05:11",
+            "mtime": 1780131911.3108099,
+            "name": "asym_jetson_partition_rankings_compressed.csv",
+            "path": "utility/asym_jetson_partition_rankings_compressed.csv"
+          },
+          {
+            "bytes": 82580,
+            "modified": "2026-05-30T04:05:11",
+            "mtime": 1780131911.0746977,
+            "name": "asym_jetson_partition_rankings_nocompress.csv",
+            "path": "utility/asym_jetson_partition_rankings_nocompress.csv"
+          },
+          {
+            "bytes": 185983,
+            "modified": "2026-05-30T04:05:11",
+            "mtime": 1780131911.0355453,
+            "name": "asym_jetson_link_bandwidth_stats.csv",
+            "path": "utility/asym_jetson_link_bandwidth_stats.csv"
+          },
+          {
+            "bytes": 62235,
+            "modified": "2026-05-30T04:05:10",
+            "mtime": 1780131910.9973135,
+            "name": "asym_jetson_stage_compute_payload_stats.csv",
+            "path": "utility/asym_jetson_stage_compute_payload_stats.csv"
+          }
+        ],
+        "latest_csv_mtime": "2026-05-30T04:05:11",
+        "path": "utility",
+        "total_csv_bytes": 889134
+      }
+    },
+    "models": [
+      "sig_yolo_v8n_f20t20_c100",
+      "sig_yolo_v8s_f20t20_c100",
+      "sig_yolo_v8x_f20t20_c100"
+    ],
+    "notes": [
+      "Primary ranking metric is pipeline throughput bottleneck: max(node_compute_sec, edge_comm_sec).",
+      "Secondary ranking metric is single-sample E2E estimate: sum(node_compute_sec)+sum(edge_comm_sec).",
+      "Compression byte ratios are inferred only from distributed cases where payload bytes actually decreased.",
+      "Unsupported runtime boundaries are excluded unless ALLOW_UNSUPPORTED_RUNTIME_BOUNDARIES is set True."
+    ],
+    "platform": "jetson",
+    "rates_mbps": [
+      25.0,
+      50.0,
+      150.0
+    ],
+    "read_audit": [
+      {
+        "bytes": 1284357,
+        "modified": "2026-05-20T03:07:49",
+        "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8n_f20t20_c100_local_cpu.csv",
+        "read_elapsed_sec": 0.020956499967724085,
+        "rows": 848
+      },
+      {
+        "bytes": 1276468,
+        "modified": "2026-05-20T03:07:49",
+        "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8s_f20t20_c100_local_cpu.csv",
+        "read_elapsed_sec": 0.021376200020313263,
+        "rows": 848
+      },
+      {
+        "bytes": 1279326,
+        "modified": "2026-05-20T03:07:49",
+        "path": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8x_f20t20_c100_local_cpu.csv",
+        "read_elapsed_sec": 0.021885700058192015,
+        "rows": 848
+      },
+      {
+        "bytes": 241562,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003227400127798319,
+        "rows": 100
+      },
+      {
+        "bytes": 241181,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030269999988377094,
+        "rows": 100
+      },
+      {
+        "bytes": 241219,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.002984900027513504,
+        "rows": 100
+      },
+      {
+        "bytes": 235233,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030140001326799393,
+        "rows": 100
+      },
+      {
+        "bytes": 234884,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.002920800121501088,
+        "rows": 100
+      },
+      {
+        "bytes": 234937,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003113500075414777,
+        "rows": 100
+      },
+      {
+        "bytes": 236239,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0029725998174399137,
+        "rows": 100
+      },
+      {
+        "bytes": 235760,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0033761002123355865,
+        "rows": 100
+      },
+      {
+        "bytes": 235918,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030575001146644354,
+        "rows": 100
+      },
+      {
+        "bytes": 236113,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.002975400071591139,
+        "rows": 100
+      },
+      {
+        "bytes": 235516,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.00306499982252717,
+        "rows": 100
+      },
+      {
+        "bytes": 235832,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0029187998734414577,
+        "rows": 100
+      },
+      {
+        "bytes": 235151,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0029102000407874584,
+        "rows": 100
+      },
+      {
+        "bytes": 234759,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031610000878572464,
+        "rows": 100
+      },
+      {
+        "bytes": 234844,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003009699983522296,
+        "rows": 100
+      },
+      {
+        "bytes": 234757,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0033069998025894165,
+        "rows": 100
+      },
+      {
+        "bytes": 234228,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.003032800043001771,
+        "rows": 100
+      },
+      {
+        "bytes": 234391,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0029396999161690474,
+        "rows": 100
+      },
+      {
+        "bytes": 235003,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0029331999830901623,
+        "rows": 100
+      },
+      {
+        "bytes": 234643,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.003081799950450659,
+        "rows": 100
+      },
+      {
+        "bytes": 234803,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8n_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0033026000019162893,
+        "rows": 100
+      },
+      {
+        "bytes": 245342,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003172999946400523,
+        "rows": 100
+      },
+      {
+        "bytes": 244968,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.003102899994701147,
+        "rows": 100
+      },
+      {
+        "bytes": 245205,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003226799890398979,
+        "rows": 100
+      },
+      {
+        "bytes": 238988,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003117999993264675,
+        "rows": 100
+      },
+      {
+        "bytes": 238715,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0032465001568198204,
+        "rows": 100
+      },
+      {
+        "bytes": 238796,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031077000312507153,
+        "rows": 100
+      },
+      {
+        "bytes": 239966,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003356100060045719,
+        "rows": 100
+      },
+      {
+        "bytes": 239580,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.003089900128543377,
+        "rows": 100
+      },
+      {
+        "bytes": 239752,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003143999958410859,
+        "rows": 100
+      },
+      {
+        "bytes": 240108,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003275499911978841,
+        "rows": 100
+      },
+      {
+        "bytes": 239582,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031773000955581665,
+        "rows": 100
+      },
+      {
+        "bytes": 239686,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003122500143945217,
+        "rows": 100
+      },
+      {
+        "bytes": 239056,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003058200003579259,
+        "rows": 100
+      },
+      {
+        "bytes": 238490,
+        "modified": "2026-05-27T10:40:51",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.003231000155210495,
+        "rows": 100
+      },
+      {
+        "bytes": 238782,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003151899902150035,
+        "rows": 100
+      },
+      {
+        "bytes": 238644,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003422799985855818,
+        "rows": 100
+      },
+      {
+        "bytes": 238130,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031977000180631876,
+        "rows": 100
+      },
+      {
+        "bytes": 238354,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031129000708460808,
+        "rows": 100
+      },
+      {
+        "bytes": 239076,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031898999586701393,
+        "rows": 100
+      },
+      {
+        "bytes": 238585,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031738001853227615,
+        "rows": 100
+      },
+      {
+        "bytes": 238780,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8s_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031902999617159367,
+        "rows": 100
+      },
+      {
+        "bytes": 233762,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030400000978261232,
+        "rows": 100
+      },
+      {
+        "bytes": 233438,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031087000388652086,
+        "rows": 100
+      },
+      {
+        "bytes": 233503,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_llmint8_o0p01_fp16_int8_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0032420000061392784,
+        "rows": 100
+      },
+      {
+        "bytes": 227549,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030559999868273735,
+        "rows": 100
+      },
+      {
+        "bytes": 227204,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.003013199893757701,
+        "rows": 100
+      },
+      {
+        "bytes": 227156,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_nocompress_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003021499840542674,
+        "rows": 100
+      },
+      {
+        "bytes": 227705,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.003010199870914221,
+        "rows": 100
+      },
+      {
+        "bytes": 227157,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030617001466453075,
+        "rows": 100
+      },
+      {
+        "bytes": 227431,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int4_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030310999136418104,
+        "rows": 100
+      },
+      {
+        "bytes": 228344,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0033258001785725355,
+        "rows": 100
+      },
+      {
+        "bytes": 228091,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.002987799933180213,
+        "rows": 100
+      },
+      {
+        "bytes": 228208,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_quant_int8_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003041599877178669,
+        "rows": 100
+      },
+      {
+        "bytes": 225454,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0030525000765919685,
+        "rows": 100
+      },
+      {
+        "bytes": 225242,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0032335000578314066,
+        "rows": 100
+      },
+      {
+        "bytes": 225496,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p25_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003086599987000227,
+        "rows": 100
+      },
+      {
+        "bytes": 225233,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.00304169999435544,
+        "rows": 100
+      },
+      {
+        "bytes": 224975,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.0029857000336050987,
+        "rows": 100
+      },
+      {
+        "bytes": 224930,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p5_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003002299927175045,
+        "rows": 100
+      },
+      {
+        "bytes": 226664,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate150mbps_samples100.csv",
+        "read_elapsed_sec": 0.0031386998016387224,
+        "rows": 100
+      },
+      {
+        "bytes": 226402,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate25mbps_samples100.csv",
+        "read_elapsed_sec": 0.00298219989053905,
+        "rows": 100
+      },
+      {
+        "bytes": 226448,
+        "modified": "2026-05-27T10:40:50",
+        "path": "distributed_stage_sweep_results/distributed_stage_sweep_results_asym/distributedModule_FastSigmf_sig_yolo_v8x_f20t20_c100_jetson_cpu_topk_0p75_rate50mbps_samples100.csv",
+        "read_elapsed_sec": 0.003066499950364232,
+        "rows": 100
+      }
+    ],
+    "stage_stat": "median",
+    "top_k": 16
+  },
+  "models": {
+    "sig_yolo_v8n_f20t20_c100": {
+      "model_name": "sig_yolo_v8n_f20t20_c100",
+      "sample_count": 848,
+      "source_csv": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8n_f20t20_c100_local_cpu.csv",
+      "stages": {
+        "model_head": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "model_head_box_sec",
+            "model_head_cls_sec",
+            "model_head_decode_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.05619401000012658,
+            "mean": 0.015282398483492375,
+            "median": 0.014998014000013882,
+            "min": 0.008910588000048847,
+            "p90": 0.023598322000043477,
+            "p95": 0.02618435384999316,
+            "std": 0.00644708520841218,
+            "variance": 4.156490768452712e-05
+          },
+          "output_byte_fields": [
+            "model_head_decode_bytes",
+            "model_box_to_decode_bytes",
+            "model_cls_to_decode_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 140800.0,
+            "mean": 140800.0,
+            "median": 140800.0,
+            "min": 140800.0,
+            "p90": 140800.0,
+            "p95": 140800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "decoded_prediction",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": false,
+          "stage": "model_head",
+          "stage_index": 14
+        },
+        "model_psa": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "model_psa_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 5.184799999824463e-05,
+            "mean": 1.8297600231956834e-05,
+            "median": 1.795399998627545e-05,
+            "min": 1.6098000060082995e-05,
+            "p90": 1.9276000136869696e-05,
+            "p95": 1.9752500026015693e-05,
+            "std": 2.3381017127417374e-06,
+            "variance": 5.466719619125847e-12
+          },
+          "output_byte_fields": [
+            "model_psa_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 409600.0,
+            "mean": 409600.0,
+            "median": 409600.0,
+            "min": 409600.0,
+            "p90": 409600.0,
+            "p95": 409600.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_psa_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": false,
+          "stage": "model_psa",
+          "stage_index": 13
+        },
+        "model_sppf": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_sppf_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.03832914500003426,
+            "mean": 0.009031511586083951,
+            "median": 0.0088859629999547,
+            "min": 0.003454381999972611,
+            "p90": 0.015555214500056988,
+            "p95": 0.019187516649998314,
+            "std": 0.0057688904618852874,
+            "variance": 3.3280097161231046e-05
+          },
+          "output_byte_fields": [
+            "model_sppf_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 409600.0,
+            "mean": 409600.0,
+            "median": 409600.0,
+            "min": 409600.0,
+            "p90": 409600.0,
+            "p95": 409600.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_sppf_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_sppf",
+          "stage_index": 12
+        },
+        "model_stage_0": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_0_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.0998766490001799,
+            "mean": 0.04334602707429524,
+            "median": 0.0394239059999677,
+            "min": 0.03197090100002242,
+            "p90": 0.060326313899957996,
+            "p95": 0.06675784275001319,
+            "std": 0.011510351760947488,
+            "variance": 0.00013248819766074692
+          },
+          "output_byte_fields": [
+            "model_stage_0_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 6553600.0,
+            "mean": 6553600.0,
+            "median": 6553600.0,
+            "min": 6553600.0,
+            "p90": 6553600.0,
+            "p95": 6553600.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_0_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_0",
+          "stage_index": 7
+        },
+        "model_stage_1": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_1_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.13183252399994672,
+            "mean": 0.044951958155655544,
+            "median": 0.044145909000064876,
+            "min": 0.029259163999995508,
+            "p90": 0.066343921400005,
+            "p95": 0.07287238399999296,
+            "std": 0.015841838488737398,
+            "variance": 0.0002509638467032416
+          },
+          "output_byte_fields": [
+            "model_stage_1_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 3276800.0,
+            "mean": 3276800.0,
+            "median": 3276800.0,
+            "min": 3276800.0,
+            "p90": 3276800.0,
+            "p95": 3276800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_1_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_1",
+          "stage_index": 8
+        },
+        "model_stage_2": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_2_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.103860240999893,
+            "mean": 0.03129570992570709,
+            "median": 0.030735644999992928,
+            "min": 0.018968614000073103,
+            "p90": 0.04559452969994027,
+            "p95": 0.055556690200049275,
+            "std": 0.012997249920567807,
+            "variance": 0.00016892850549769984
+          },
+          "output_byte_fields": [
+            "model_stage_2_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1638400.0,
+            "mean": 1638400.0,
+            "median": 1638400.0,
+            "min": 1638400.0,
+            "p90": 1638400.0,
+            "p95": 1638400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_2_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_2",
+          "stage_index": 9
+        },
+        "model_stage_3": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_3_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.05201729400005206,
+            "mean": 0.01746007728773818,
+            "median": 0.017320738000080382,
+            "min": 0.009598385000003873,
+            "p90": 0.02604494140003908,
+            "p95": 0.03273274899995897,
+            "std": 0.008200851557159576,
+            "variance": 6.725396626256664e-05
+          },
+          "output_byte_fields": [
+            "model_stage_3_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 819200.0,
+            "mean": 819200.0,
+            "median": 819200.0,
+            "min": 819200.0,
+            "p90": 819200.0,
+            "p95": 819200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_3_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_3",
+          "stage_index": 10
+        },
+        "model_stage_4": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_4_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.06585293199987063,
+            "mean": 0.016254126687502406,
+            "median": 0.015969248000004654,
+            "min": 0.008669225999938135,
+            "p90": 0.025212141199926912,
+            "p95": 0.030033192950054396,
+            "std": 0.007898520673171932,
+            "variance": 6.238662882452439e-05
+          },
+          "output_byte_fields": [
+            "model_stage_4_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 409600.0,
+            "mean": 409600.0,
+            "median": 409600.0,
+            "min": 409600.0,
+            "p90": 409600.0,
+            "p95": 409600.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_4_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_4",
+          "stage_index": 11
+        },
+        "postprocess": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "post_raw_decode_sec",
+            "post_load_label_sec",
+            "post_detection_metric_sec",
+            "post_overlap_metric_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 2.156340118000003,
+            "mean": 0.010462541748819536,
+            "median": 0.007930672500265246,
+            "min": 0.005844404999947983,
+            "p90": 0.008665019999983769,
+            "p95": 0.00883964200012315,
+            "std": 0.07373584524528969,
+            "variance": 0.005436974874037309
+          },
+          "output_byte_fields": [
+            "post_raw_decode_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 96.0,
+            "mean": 68.06603773584905,
+            "median": 72.0,
+            "min": 24.0,
+            "p90": 96.0,
+            "p95": 96.0,
+            "std": 17.37041991645705,
+            "variance": 301.7314880740477
+          },
+          "payload_type": "detections",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "postprocess",
+          "stage_index": 15
+        },
+        "pre_canvas_render": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_canvas_render_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.6515608719998909,
+            "mean": 0.45359915445754784,
+            "median": 0.4521174264999672,
+            "min": 0.4462909110000055,
+            "p90": 0.45718949689999133,
+            "p95": 0.46602445025010863,
+            "std": 0.008833621697552935,
+            "variance": 7.8032872295478e-05
+          },
+          "output_byte_fields": [
+            "pre_canvas_render_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1638400.0,
+            "mean": 1638400.0,
+            "median": 1638400.0,
+            "min": 1638400.0,
+            "p90": 1638400.0,
+            "p95": 1638400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "rgba_render_buffer",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_canvas_render",
+          "stage_index": 4
+        },
+        "pre_canvas_to_rgb": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_canvas_to_rgb_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.00371367600001804,
+            "mean": 0.003555546609670583,
+            "median": 0.0035539529999368824,
+            "min": 0.0034832000000051266,
+            "p90": 0.0035754905999397122,
+            "p95": 0.0035853522500474354,
+            "std": 2.296094799103741e-05,
+            "variance": 5.272051326471249e-10
+          },
+          "output_byte_fields": [
+            "pre_canvas_to_rgb_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1228800.0,
+            "mean": 1228800.0,
+            "median": 1228800.0,
+            "min": 1228800.0,
+            "p90": 1228800.0,
+            "p95": 1228800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "rgb_image",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_canvas_to_rgb",
+          "stage_index": 5
+        },
+        "pre_fftshift_log": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_fftshift_log_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.0821280369999613,
+            "mean": 0.07299490274763852,
+            "median": 0.07254464149997375,
+            "min": 0.07208990599997378,
+            "p90": 0.07385544299991124,
+            "p95": 0.07399203829997703,
+            "std": 0.0008502120792101256,
+            "variance": 7.228605796348049e-07
+          },
+          "output_byte_fields": [
+            "pre_fftshift_log_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654656.0,
+            "mean": 19654656.0,
+            "median": 19654656.0,
+            "min": 19654656.0,
+            "p90": 19654656.0,
+            "p95": 19654656.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_db",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_fftshift_log",
+          "stage_index": 2
+        },
+        "pre_percentile_clip": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_percentile_clip_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.28916234500002247,
+            "mean": 0.24236227239150557,
+            "median": 0.24291219900004535,
+            "min": 0.19345006100002138,
+            "p90": 0.2625266463999878,
+            "p95": 0.26695897909999927,
+            "std": 0.015859860532607576,
+            "variance": 0.0002515351761137635
+          },
+          "output_byte_fields": [
+            "pre_fftshift_log_bytes",
+            "pre_percentile_clip_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654672.0,
+            "mean": 19654672.0,
+            "median": 19654672.0,
+            "min": 19654672.0,
+            "p90": 19654672.0,
+            "p95": 19654672.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_db_with_clip_range",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_percentile_clip",
+          "stage_index": 3
+        },
+        "pre_read_iq": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_read_iq_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.017180912999947395,
+            "mean": 0.0062241568066026196,
+            "median": 0.006100715500053866,
+            "min": 0.005517991000033362,
+            "p90": 0.006606693100002304,
+            "p95": 0.00702696240001046,
+            "std": 0.0007426175376423425,
+            "variance": 5.514808072139761e-07
+          },
+          "output_byte_fields": [
+            "pre_read_iq_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 9830400.0,
+            "mean": 9830400.0,
+            "median": 9830400.0,
+            "min": 9830400.0,
+            "p90": 9830400.0,
+            "p95": 9830400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "iq_complex64",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": false,
+          "stage": "pre_read_iq",
+          "stage_index": 0
+        },
+        "pre_spectrogram": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_spectrogram_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.11092479500007357,
+            "mean": 0.08290653074410086,
+            "median": 0.0854187525000043,
+            "min": 0.07295033999992029,
+            "p90": 0.08781854769998745,
+            "p95": 0.08980644725000957,
+            "std": 0.005917964683308326,
+            "variance": 3.502230599288461e-05
+          },
+          "output_byte_fields": [
+            "pre_spectrogram_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654656.0,
+            "mean": 19654656.0,
+            "median": 19654656.0,
+            "min": 19654656.0,
+            "p90": 19654656.0,
+            "p95": 19654656.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_magnitude",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": false,
+          "stage": "pre_spectrogram",
+          "stage_index": 1
+        },
+        "pre_to_tensor": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "pre_to_tensor_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.007109848000027341,
+            "mean": 0.002225543415094986,
+            "median": 0.0020808800001077543,
+            "min": 0.00162314699991839,
+            "p90": 0.0027152105999789455,
+            "p95": 0.002885642599937909,
+            "std": 0.00040385756106229865,
+            "variance": 1.631009296271883e-07
+          },
+          "output_byte_fields": [
+            "pre_to_tensor_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 4915200.0,
+            "mean": 4915200.0,
+            "median": 4915200.0,
+            "min": 4915200.0,
+            "p90": 4915200.0,
+            "p95": 4915200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "image_tensor",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "pre_to_tensor",
+          "stage_index": 6
+        }
+      }
+    },
+    "sig_yolo_v8s_f20t20_c100": {
+      "model_name": "sig_yolo_v8s_f20t20_c100",
+      "sample_count": 848,
+      "source_csv": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8s_f20t20_c100_local_cpu.csv",
+      "stages": {
+        "model_head": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "model_head_box_sec",
+            "model_head_cls_sec",
+            "model_head_decode_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.08702580199997101,
+            "mean": 0.03863337856485638,
+            "median": 0.03630330750002031,
+            "min": 0.02171506499962561,
+            "p90": 0.05685668640021503,
+            "p95": 0.057040267450156536,
+            "std": 0.010299545595877516,
+            "variance": 0.00010608063948155994
+          },
+          "output_byte_fields": [
+            "model_head_decode_bytes",
+            "model_box_to_decode_bytes",
+            "model_cls_to_decode_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 140800.0,
+            "mean": 140800.0,
+            "median": 140800.0,
+            "min": 140800.0,
+            "p90": 140800.0,
+            "p95": 140800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "decoded_prediction",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": false,
+          "stage": "model_head",
+          "stage_index": 14
+        },
+        "model_psa": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "model_psa_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 3.9136999930633465e-05,
+            "mean": 1.8230650938384537e-05,
+            "median": 1.8000999943978968e-05,
+            "min": 1.619299973754096e-05,
+            "p90": 1.9586000007620896e-05,
+            "p95": 2.009764982631168e-05,
+            "std": 1.3566075105235227e-06,
+            "variance": 1.8403839376088297e-12
+          },
+          "output_byte_fields": [
+            "model_psa_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 819200.0,
+            "mean": 819200.0,
+            "median": 819200.0,
+            "min": 819200.0,
+            "p90": 819200.0,
+            "p95": 819200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_psa_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": false,
+          "stage": "model_psa",
+          "stage_index": 13
+        },
+        "model_sppf": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_sppf_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.04617518600002768,
+            "mean": 0.022443730160380534,
+            "median": 0.02102364150005087,
+            "min": 0.00793884299991987,
+            "p90": 0.039945467000052304,
+            "p95": 0.04015278124991255,
+            "std": 0.00909374923791751,
+            "variance": 8.269627520212528e-05
+          },
+          "output_byte_fields": [
+            "model_sppf_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 819200.0,
+            "mean": 819200.0,
+            "median": 819200.0,
+            "min": 819200.0,
+            "p90": 819200.0,
+            "p95": 819200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_sppf_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_sppf",
+          "stage_index": 12
+        },
+        "model_stage_0": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_0_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.1602439109997249,
+            "mean": 0.09891085243395911,
+            "median": 0.09560616749990913,
+            "min": 0.0679880709999452,
+            "p90": 0.124097139100013,
+            "p95": 0.12879355534993236,
+            "std": 0.018927458813377856,
+            "variance": 0.00035824869713211503
+          },
+          "output_byte_fields": [
+            "model_stage_0_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 13107200.0,
+            "mean": 13107200.0,
+            "median": 13107200.0,
+            "min": 13107200.0,
+            "p90": 13107200.0,
+            "p95": 13107200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_0_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_0",
+          "stage_index": 7
+        },
+        "model_stage_1": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_1_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.1738414050000756,
+            "mean": 0.10622738350944014,
+            "median": 0.1067993914998624,
+            "min": 0.065960885000095,
+            "p90": 0.1390012239000498,
+            "p95": 0.14751223244995798,
+            "std": 0.02389876440204801,
+            "variance": 0.0005711509399445971
+          },
+          "output_byte_fields": [
+            "model_stage_1_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 6553600.0,
+            "mean": 6553600.0,
+            "median": 6553600.0,
+            "min": 6553600.0,
+            "p90": 6553600.0,
+            "p95": 6553600.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_1_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_1",
+          "stage_index": 8
+        },
+        "model_stage_2": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_2_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.14927118600007816,
+            "mean": 0.07721048722287925,
+            "median": 0.07650702150010602,
+            "min": 0.04597867100005715,
+            "p90": 0.10737261899994337,
+            "p95": 0.12185432544999913,
+            "std": 0.019923841990556235,
+            "variance": 0.00039695947966465186
+          },
+          "output_byte_fields": [
+            "model_stage_2_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 3276800.0,
+            "mean": 3276800.0,
+            "median": 3276800.0,
+            "min": 3276800.0,
+            "p90": 3276800.0,
+            "p95": 3276800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_2_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_2",
+          "stage_index": 9
+        },
+        "model_stage_3": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_3_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.09132930700002362,
+            "mean": 0.045609033517694825,
+            "median": 0.04437839999991411,
+            "min": 0.025847043000112535,
+            "p90": 0.06867929140025808,
+            "p95": 0.07168495925004663,
+            "std": 0.012634570242167006,
+            "variance": 0.00015963236520425203
+          },
+          "output_byte_fields": [
+            "model_stage_3_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1638400.0,
+            "mean": 1638400.0,
+            "median": 1638400.0,
+            "min": 1638400.0,
+            "p90": 1638400.0,
+            "p95": 1638400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_3_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_3",
+          "stage_index": 10
+        },
+        "model_stage_4": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_4_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.08190047799985223,
+            "mean": 0.04233891575236189,
+            "median": 0.04040202150008554,
+            "min": 0.024175719000140816,
+            "p90": 0.06336022999996657,
+            "p95": 0.06373024690002467,
+            "std": 0.01133267603982019,
+            "variance": 0.00012842954622351463
+          },
+          "output_byte_fields": [
+            "model_stage_4_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 819200.0,
+            "mean": 819200.0,
+            "median": 819200.0,
+            "min": 819200.0,
+            "p90": 819200.0,
+            "p95": 819200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_4_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_4",
+          "stage_index": 11
+        },
+        "postprocess": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "post_raw_decode_sec",
+            "post_load_label_sec",
+            "post_detection_metric_sec",
+            "post_overlap_metric_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.01087704900010067,
+            "mean": 0.008112820115585968,
+            "median": 0.008114974499562777,
+            "min": 0.005624183000008998,
+            "p90": 0.009084154500123986,
+            "p95": 0.009361118800097757,
+            "std": 0.0007621874154538378,
+            "variance": 5.809296562762012e-07
+          },
+          "output_byte_fields": [
+            "post_raw_decode_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 96.0,
+            "mean": 48.4811320754717,
+            "median": 48.0,
+            "min": 48.0,
+            "p90": 48.0,
+            "p95": 48.0,
+            "std": 3.560080378771073,
+            "variance": 12.674172303310787
+          },
+          "payload_type": "detections",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "postprocess",
+          "stage_index": 15
+        },
+        "pre_canvas_render": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_canvas_render_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.6640720240000064,
+            "mean": 0.45407076930070817,
+            "median": 0.4538830209999105,
+            "min": 0.44581470299999637,
+            "p90": 0.4577607286999637,
+            "p95": 0.45986639224997816,
+            "std": 0.008061150439815487,
+            "variance": 6.498214641333744e-05
+          },
+          "output_byte_fields": [
+            "pre_canvas_render_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1638400.0,
+            "mean": 1638400.0,
+            "median": 1638400.0,
+            "min": 1638400.0,
+            "p90": 1638400.0,
+            "p95": 1638400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "rgba_render_buffer",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_canvas_render",
+          "stage_index": 4
+        },
+        "pre_canvas_to_rgb": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_canvas_to_rgb_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.0038990000002741,
+            "mean": 0.00355258729835115,
+            "median": 0.003551109499994709,
+            "min": 0.003479483000091932,
+            "p90": 0.0035740192000503156,
+            "p95": 0.0035849696501486505,
+            "std": 2.5854234498384317e-05,
+            "variance": 6.684414414974457e-10
+          },
+          "output_byte_fields": [
+            "pre_canvas_to_rgb_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1228800.0,
+            "mean": 1228800.0,
+            "median": 1228800.0,
+            "min": 1228800.0,
+            "p90": 1228800.0,
+            "p95": 1228800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "rgb_image",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_canvas_to_rgb",
+          "stage_index": 5
+        },
+        "pre_fftshift_log": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_fftshift_log_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.08091763900006299,
+            "mean": 0.07354486349409577,
+            "median": 0.07348934900005588,
+            "min": 0.07229318500003501,
+            "p90": 0.0741015376000405,
+            "p95": 0.07846219195000685,
+            "std": 0.0014820418297447717,
+            "variance": 2.1964479851132307e-06
+          },
+          "output_byte_fields": [
+            "pre_fftshift_log_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654656.0,
+            "mean": 19654656.0,
+            "median": 19654656.0,
+            "min": 19654656.0,
+            "p90": 19654656.0,
+            "p95": 19654656.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_db",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_fftshift_log",
+          "stage_index": 2
+        },
+        "pre_percentile_clip": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_percentile_clip_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.29178260400021827,
+            "mean": 0.24418415237853655,
+            "median": 0.24469075000001794,
+            "min": 0.19182927799988647,
+            "p90": 0.26451650629990126,
+            "p95": 0.2696205000999157,
+            "std": 0.015828417767839074,
+            "variance": 0.0002505388090332437
+          },
+          "output_byte_fields": [
+            "pre_fftshift_log_bytes",
+            "pre_percentile_clip_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654672.0,
+            "mean": 19654672.0,
+            "median": 19654672.0,
+            "min": 19654672.0,
+            "p90": 19654672.0,
+            "p95": 19654672.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_db_with_clip_range",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_percentile_clip",
+          "stage_index": 3
+        },
+        "pre_read_iq": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_read_iq_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.012714953999875434,
+            "mean": 0.006705437629718777,
+            "median": 0.006553903000167338,
+            "min": 0.005210046999991391,
+            "p90": 0.007545170399998824,
+            "p95": 0.007985465750061848,
+            "std": 0.0007583468115208344,
+            "variance": 5.750898865438159e-07
+          },
+          "output_byte_fields": [
+            "pre_read_iq_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 9830400.0,
+            "mean": 9830400.0,
+            "median": 9830400.0,
+            "min": 9830400.0,
+            "p90": 9830400.0,
+            "p95": 9830400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "iq_complex64",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": false,
+          "stage": "pre_read_iq",
+          "stage_index": 0
+        },
+        "pre_spectrogram": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_spectrogram_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.10156625899981009,
+            "mean": 0.08391248332664702,
+            "median": 0.08521411899994291,
+            "min": 0.07355354600008468,
+            "p90": 0.08681139870004699,
+            "p95": 0.095846736149997,
+            "std": 0.005579912071402395,
+            "variance": 3.113541872458216e-05
+          },
+          "output_byte_fields": [
+            "pre_spectrogram_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654656.0,
+            "mean": 19654656.0,
+            "median": 19654656.0,
+            "min": 19654656.0,
+            "p90": 19654656.0,
+            "p95": 19654656.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_magnitude",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": false,
+          "stage": "pre_spectrogram",
+          "stage_index": 1
+        },
+        "pre_to_tensor": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "pre_to_tensor_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.005045066000093357,
+            "mean": 0.0025204827889151794,
+            "median": 0.002456127499954164,
+            "min": 0.0016906989999370126,
+            "p90": 0.003520535600068797,
+            "p95": 0.003725287349959672,
+            "std": 0.000560492917254249,
+            "variance": 3.1415231029217846e-07
+          },
+          "output_byte_fields": [
+            "pre_to_tensor_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 4915200.0,
+            "mean": 4915200.0,
+            "median": 4915200.0,
+            "min": 4915200.0,
+            "p90": 4915200.0,
+            "p95": 4915200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "image_tensor",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "pre_to_tensor",
+          "stage_index": 6
+        }
+      }
+    },
+    "sig_yolo_v8x_f20t20_c100": {
+      "model_name": "sig_yolo_v8x_f20t20_c100",
+      "sample_count": 848,
+      "source_csv": "local_baseline_results_by_stage_cost_asym_yolo/baseline_FastSigmf_sig_yolo_v8x_f20t20_c100_local_cpu.csv",
+      "stages": {
+        "model_head": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "model_head_box_sec",
+            "model_head_cls_sec",
+            "model_head_decode_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.08149463700010529,
+            "mean": 0.06330734125827012,
+            "median": 0.06774623349974718,
+            "min": 0.038171206000697566,
+            "p90": 0.06862193970032422,
+            "p95": 0.07111169614975096,
+            "std": 0.008306929617781749,
+            "variance": 6.900507967477963e-05
+          },
+          "output_byte_fields": [
+            "model_head_decode_bytes",
+            "model_box_to_decode_bytes",
+            "model_cls_to_decode_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 140800.0,
+            "mean": 140800.0,
+            "median": 140800.0,
+            "min": 140800.0,
+            "p90": 140800.0,
+            "p95": 140800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "decoded_prediction",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": false,
+          "stage": "model_head",
+          "stage_index": 14
+        },
+        "model_psa": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "model_psa_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 5.555499956244603e-05,
+            "mean": 1.7901415106361696e-05,
+            "median": 1.76009998540394e-05,
+            "min": 1.5712999811512418e-05,
+            "p90": 1.9232300201110774e-05,
+            "p95": 1.9840299819406938e-05,
+            "std": 1.9438612983870853e-06,
+            "variance": 3.778596747367126e-12
+          },
+          "output_byte_fields": [
+            "model_psa_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1024000.0,
+            "mean": 1024000.0,
+            "median": 1024000.0,
+            "min": 1024000.0,
+            "p90": 1024000.0,
+            "p95": 1024000.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_psa_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": false,
+          "stage": "model_psa",
+          "stage_index": 13
+        },
+        "model_sppf": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_sppf_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.05293033099951572,
+            "mean": 0.041527617272403436,
+            "median": 0.04589421800005766,
+            "min": 0.01819107599931158,
+            "p90": 0.046230515300067054,
+            "p95": 0.046694294650205845,
+            "std": 0.00788015099601313,
+            "variance": 6.209677971996673e-05
+          },
+          "output_byte_fields": [
+            "model_sppf_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1024000.0,
+            "mean": 1024000.0,
+            "median": 1024000.0,
+            "min": 1024000.0,
+            "p90": 1024000.0,
+            "p95": 1024000.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_sppf_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_sppf",
+          "stage_index": 12
+        },
+        "model_stage_0": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_0_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.7707429079996473,
+            "mean": 0.6367716898089615,
+            "median": 0.6507902384998943,
+            "min": 0.4693039459998545,
+            "p90": 0.6980129921998923,
+            "p95": 0.7076346413496821,
+            "std": 0.0576215133580385,
+            "variance": 0.0033202388016706098
+          },
+          "output_byte_fields": [
+            "model_stage_0_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 32768000.0,
+            "mean": 32768000.0,
+            "median": 32768000.0,
+            "min": 32768000.0,
+            "p90": 32768000.0,
+            "p95": 32768000.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_0_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_0",
+          "stage_index": 7
+        },
+        "model_stage_1": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_1_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.9283647229999588,
+            "mean": 0.7538825504728679,
+            "median": 0.7611957735000487,
+            "min": 0.5941642430002503,
+            "p90": 0.8256859105003969,
+            "p95": 0.8378567279999515,
+            "std": 0.05909979518941293,
+            "variance": 0.003492785791430556
+          },
+          "output_byte_fields": [
+            "model_stage_1_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 16384000.0,
+            "mean": 16384000.0,
+            "median": 16384000.0,
+            "min": 16384000.0,
+            "p90": 16384000.0,
+            "p95": 16384000.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_1_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_1",
+          "stage_index": 8
+        },
+        "model_stage_2": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_2_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.6786539770000672,
+            "mean": 0.6122479380176801,
+            "median": 0.6267226219999884,
+            "min": 0.4594199790003586,
+            "p90": 0.660984652399884,
+            "p95": 0.6632363638497963,
+            "std": 0.0488679099650999,
+            "variance": 0.0023880726243571096
+          },
+          "output_byte_fields": [
+            "model_stage_2_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 8192000.0,
+            "mean": 8192000.0,
+            "median": 8192000.0,
+            "min": 8192000.0,
+            "p90": 8192000.0,
+            "p95": 8192000.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_2_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_2",
+          "stage_index": 9
+        },
+        "model_stage_3": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_3_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.36622371200064663,
+            "mean": 0.33259569905895736,
+            "median": 0.34567253900013384,
+            "min": 0.24818398699972022,
+            "p90": 0.3527517339000952,
+            "p95": 0.3541434426499791,
+            "std": 0.025635282729940714,
+            "variance": 0.0006571677206439967
+          },
+          "output_byte_fields": [
+            "model_stage_3_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 4096000.0,
+            "mean": 4096000.0,
+            "median": 4096000.0,
+            "min": 4096000.0,
+            "p90": 4096000.0,
+            "p95": 4096000.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_3_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_3",
+          "stage_index": 10
+        },
+        "model_stage_4": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "model_stage_4_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.17606044800004383,
+            "mean": 0.1527005023643845,
+            "median": 0.16111081200006083,
+            "min": 0.09525800500023252,
+            "p90": 0.16452041130000908,
+            "p95": 0.16706407159999798,
+            "std": 0.01727972244983669,
+            "variance": 0.0002985888079433901
+          },
+          "output_byte_fields": [
+            "model_stage_4_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1024000.0,
+            "mean": 1024000.0,
+            "median": 1024000.0,
+            "min": 1024000.0,
+            "p90": 1024000.0,
+            "p95": 1024000.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "model_stage_4_output",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "model_stage_4",
+          "stage_index": 11
+        },
+        "postprocess": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "post_raw_decode_sec",
+            "post_load_label_sec",
+            "post_detection_metric_sec",
+            "post_overlap_metric_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.016689976999714418,
+            "mean": 0.009201547691027523,
+            "median": 0.008924131500407384,
+            "min": 0.006054202999621339,
+            "p90": 0.009683819900146773,
+            "p95": 0.01555960114988011,
+            "std": 0.0019607283039481138,
+            "variance": 3.844455481903246e-06
+          },
+          "output_byte_fields": [
+            "post_raw_decode_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 72.0,
+            "mean": 48.056603773584904,
+            "median": 48.0,
+            "min": 48.0,
+            "p90": 48.0,
+            "p95": 48.0,
+            "std": 1.1641677623322528,
+            "variance": 1.3552865788536845
+          },
+          "payload_type": "detections",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "postprocess",
+          "stage_index": 15
+        },
+        "pre_canvas_render": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_canvas_render_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.7275503480000225,
+            "mean": 0.4472514733738299,
+            "median": 0.44518752849967314,
+            "min": 0.4387926729996252,
+            "p90": 0.4506712758000049,
+            "p95": 0.4565263948999245,
+            "std": 0.012884088263362695,
+            "variance": 0.00016599973037812035
+          },
+          "output_byte_fields": [
+            "pre_canvas_render_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1638400.0,
+            "mean": 1638400.0,
+            "median": 1638400.0,
+            "min": 1638400.0,
+            "p90": 1638400.0,
+            "p95": 1638400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "rgba_render_buffer",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_canvas_render",
+          "stage_index": 4
+        },
+        "pre_canvas_to_rgb": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_canvas_to_rgb_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.0038360220005415613,
+            "mean": 0.003553462929258069,
+            "median": 0.0035508260000369773,
+            "min": 0.003481966000435932,
+            "p90": 0.0035731287998260084,
+            "p95": 0.003590649899979326,
+            "std": 2.7779079956377385e-05,
+            "variance": 7.716772832228078e-10
+          },
+          "output_byte_fields": [
+            "pre_canvas_to_rgb_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 1228800.0,
+            "mean": 1228800.0,
+            "median": 1228800.0,
+            "min": 1228800.0,
+            "p90": 1228800.0,
+            "p95": 1228800.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "rgb_image",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_canvas_to_rgb",
+          "stage_index": 5
+        },
+        "pre_fftshift_log": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_fftshift_log_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.07560251599988987,
+            "mean": 0.07225152398467626,
+            "median": 0.07219785799998135,
+            "min": 0.07188638099978562,
+            "p90": 0.07249779170019792,
+            "p95": 0.07264818569999534,
+            "std": 0.00025180011294136925,
+            "variance": 6.340329687728632e-08
+          },
+          "output_byte_fields": [
+            "pre_fftshift_log_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654656.0,
+            "mean": 19654656.0,
+            "median": 19654656.0,
+            "min": 19654656.0,
+            "p90": 19654656.0,
+            "p95": 19654656.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_db",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_fftshift_log",
+          "stage_index": 2
+        },
+        "pre_percentile_clip": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_percentile_clip_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.2898254600004293,
+            "mean": 0.24266221599055934,
+            "median": 0.24309982099998706,
+            "min": 0.19755214100041485,
+            "p90": 0.2628466817001026,
+            "p95": 0.2674670507500423,
+            "std": 0.015913486180161064,
+            "variance": 0.00025323904240617714
+          },
+          "output_byte_fields": [
+            "pre_fftshift_log_bytes",
+            "pre_percentile_clip_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654672.0,
+            "mean": 19654672.0,
+            "median": 19654672.0,
+            "min": 19654672.0,
+            "p90": 19654672.0,
+            "p95": 19654672.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_db_with_clip_range",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": true,
+          "stage": "pre_percentile_clip",
+          "stage_index": 3
+        },
+        "pre_read_iq": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_read_iq_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.019241034999595286,
+            "mean": 0.007037503754700748,
+            "median": 0.00687484549985129,
+            "min": 0.004574821999995038,
+            "p90": 0.008228605299791525,
+            "p95": 0.008866018349931436,
+            "std": 0.0011476839565665521,
+            "variance": 1.3171784641602555e-06
+          },
+          "output_byte_fields": [
+            "pre_read_iq_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 9830400.0,
+            "mean": 9830400.0,
+            "median": 9830400.0,
+            "min": 9830400.0,
+            "p90": 9830400.0,
+            "p95": 9830400.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "iq_complex64",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": false,
+          "stage": "pre_read_iq",
+          "stage_index": 0
+        },
+        "pre_spectrogram": {
+          "compression_allowed": false,
+          "compute_fields": [
+            "pre_spectrogram_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.08326046900037909,
+            "mean": 0.07481920402712983,
+            "median": 0.0745577454999875,
+            "min": 0.07237968499975977,
+            "p90": 0.0762334388002273,
+            "p95": 0.07675444540032003,
+            "std": 0.0010610517716828922,
+            "variance": 1.1258308621914043e-06
+          },
+          "output_byte_fields": [
+            "pre_spectrogram_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 19654656.0,
+            "mean": 19654656.0,
+            "median": 19654656.0,
+            "min": 19654656.0,
+            "p90": 19654656.0,
+            "p95": 19654656.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "spectrogram_magnitude",
+          "preprocess_internal_boundary": true,
+          "runtime_boundary_supported": false,
+          "stage": "pre_spectrogram",
+          "stage_index": 1
+        },
+        "pre_to_tensor": {
+          "compression_allowed": true,
+          "compute_fields": [
+            "pre_to_tensor_sec"
+          ],
+          "compute_sec": {
+            "count": 848,
+            "max": 0.004852082000070368,
+            "mean": 0.002959743308973078,
+            "median": 0.002700234000258206,
+            "min": 0.001736640999752126,
+            "p90": 0.003781319899690061,
+            "p95": 0.003851386850101335,
+            "std": 0.0005851393238604077,
+            "variance": 3.423880283278151e-07
+          },
+          "output_byte_fields": [
+            "pre_to_tensor_bytes"
+          ],
+          "output_bytes": {
+            "count": 848,
+            "max": 4915200.0,
+            "mean": 4915200.0,
+            "median": 4915200.0,
+            "min": 4915200.0,
+            "p90": 4915200.0,
+            "p95": 4915200.0,
+            "std": 0.0,
+            "variance": 0.0
+          },
+          "payload_type": "image_tensor",
+          "preprocess_internal_boundary": false,
+          "runtime_boundary_supported": true,
+          "stage": "pre_to_tensor",
+          "stage_index": 6
+        }
+      }
+    }
+  }
+}

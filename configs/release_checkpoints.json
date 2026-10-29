@@ -1,0 +1,727 @@
+{
+  "schema": 1,
+  "sets": {
+    "original_yolo": [
+      {
+        "model": "cbrs_yolo8n",
+        "path": "trained_models/cbrs_yolo8n/weights/best.pt",
+        "sha256": "14b1969262558b63a1b25dc7a086b797bd1df110ed76638df3deb4e07249b268"
+      },
+      {
+        "model": "cbrs_yolo8s",
+        "path": "trained_models/cbrs_yolo8s/weights/best.pt",
+        "sha256": "5099f194a3a5b7165f364c7d8f7de8f4d3eb9a103750eef8c02cccc104fbd165"
+      },
+      {
+        "model": "cbrs_yolo8x",
+        "path": "trained_models/cbrs_yolo8x/weights/best.pt",
+        "sha256": "21abb7408c4558ffaebceece729601182a2dad3df7ebe8f4d073010dbe1c6dd4"
+      },
+      {
+        "model": "cbrs_yolo11n",
+        "path": "trained_models/cbrs_yolo11n/weights/best.pt",
+        "sha256": "1ba7f82daaeb128b67b5638ff34b2040d0b2a7ec34dacc25cd9292019be9ddcc"
+      },
+      {
+        "model": "cbrs_yolo11s",
+        "path": "trained_models/cbrs_yolo11s/weights/best.pt",
+        "sha256": "048b0d6a6dddbdd05f67d3caf52335e889fda825a7531a8b3e1eb82dbd5d7d2b"
+      },
+      {
+        "model": "cbrs_yolo11x",
+        "path": "trained_models/cbrs_yolo11x/weights/best.pt",
+        "sha256": "717e8f7e8ef8db6bdc70d00c9aeb2c9936925b4c0a407ea642304f5584aeabfe"
+      },
+      {
+        "model": "cbrs_yolo26n",
+        "path": "trained_models/cbrs_yolo26n/weights/best.pt",
+        "sha256": "52a80fa9be117739abf78c706627570be38d81f5774864bcf0e5df6b013552fb"
+      },
+      {
+        "model": "cbrs_yolo26s",
+        "path": "trained_models/cbrs_yolo26s/weights/best.pt",
+        "sha256": "6b5059648e75fcdfff38c24e6bca615527f0a47ba2ff5b924b8d664a537550e2"
+      },
+      {
+        "model": "cbrs_yolo26x",
+        "path": "trained_models/cbrs_yolo26x/weights/best.pt",
+        "sha256": "c23c5a9f2a56738ef7d28806b2641285ce2f4a9ade4aecf3936a15c663702a8a"
+      },
+      {
+        "model": "cbrs_rtdetr_l",
+        "path": "trained_models/cbrs_rtdetr_l/weights/best.pt",
+        "sha256": "a43d4a1e814344dcaeb9c1f22260f3dae7f782fd67a08409a6567c5117fa2b53"
+      }
+    ],
+    "cedar_jetson": [
+      {
+        "model": "sig_yolo_v8n_f20t20_c100",
+        "path": "trained_models_mdi/sig_yolo_v8n_f20t20_c100/weights/best.pt",
+        "sha256": "71b1099aa76c5165495886c16451f7bb573a48b95e7883bb4ce48eb741bc9744"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t20_c100",
+        "path": "trained_models_mdi/sig_yolo_v8s_f20t20_c100/weights/best.pt",
+        "sha256": "ad1d8c2c6c37a3806d94a165e28a29e7f6b1640464bb1b6e946d17112b0f6654"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t20_c100",
+        "path": "trained_models_mdi/sig_yolo_v8x_f20t20_c100/weights/best.pt",
+        "sha256": "62f4b2faabf6011dcb5f273568661b1500a9d44bd77272fdc9dc7d0e5698cdd8"
+      }
+    ],
+    "cedar_local_latest": [
+      {
+        "model": "sig_yolo_v8n_f20t20_c25",
+        "path": "trained_models/sig_yolo_v8n_f20t20_c25/weights/best.pt",
+        "sha256": "78fc0432a8585c5412b590ab6573dcd368da73c23b423a9ecca2a0fa1be70824"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t20_c50",
+        "path": "trained_models/sig_yolo_v8n_f20t20_c50/weights/best.pt",
+        "sha256": "c849f5d7c685b2752d79b7cb95ecb477817dbfefe9b338f16919469456fbb59d"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t20_c100",
+        "path": "trained_models/sig_yolo_v8n_f20t20_c100/weights/best.pt",
+        "sha256": "4df7a110d9050def5ce3ed19d29d94b1c35a0f385e8f436b727a77d580650ec1"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t20_c150",
+        "path": "trained_models/sig_yolo_v8n_f20t20_c150/weights/best.pt",
+        "sha256": "a3c1519624fde5e52f6276e1a7c729bf9a932c3b49d17cb1738b176a6eaa4daa"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t40_c25",
+        "path": "trained_models/sig_yolo_v8n_f20t40_c25/weights/best.pt",
+        "sha256": "1e3f1a60bdef0fcb6983217743c437897e913eeabee43e94f0c8ff88f390b1ad"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t40_c50",
+        "path": "trained_models/sig_yolo_v8n_f20t40_c50/weights/best.pt",
+        "sha256": "22a9ba2d62f992691e6ac64bd7bec0101c8d55005830a3072f922a77cb327cb6"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t40_c100",
+        "path": "trained_models/sig_yolo_v8n_f20t40_c100/weights/best.pt",
+        "sha256": "6e3efa99b69b8e842e2ccb11fbe1e718b47da7e7ed4f5f036ccac9ef272d0374"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t40_c150",
+        "path": "trained_models/sig_yolo_v8n_f20t40_c150/weights/best.pt",
+        "sha256": "3852b13f3cec19b1de71cb8db9f57f014b18ffd6013e56ccceeaf168954cd63e"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t80_c25",
+        "path": "trained_models/sig_yolo_v8n_f20t80_c25/weights/best.pt",
+        "sha256": "18b96a31d7dc4799758ec05157a97b2d1a65e1e93cfe108b6a5fe4dd265b8ff1"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t80_c50",
+        "path": "trained_models/sig_yolo_v8n_f20t80_c50/weights/best.pt",
+        "sha256": "745bf7007d0c9cdb94e9565fbfc7be1cceba08363f79f0a2b6d075dfabbc9fc7"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t80_c100",
+        "path": "trained_models/sig_yolo_v8n_f20t80_c100/weights/best.pt",
+        "sha256": "67be792bff34d05fa379613d83d622e69a73ed2cd4729833a465924e50813de3"
+      },
+      {
+        "model": "sig_yolo_v8n_f20t80_c150",
+        "path": "trained_models/sig_yolo_v8n_f20t80_c150/weights/best.pt",
+        "sha256": "0aca2a9ba8c4a23480dedd2589d52eeb7e6c8229b21a27d5a8399bbdd9bbbb67"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t20_c25",
+        "path": "trained_models/sig_yolo_v8n_f40t20_c25/weights/best.pt",
+        "sha256": "d7fb6f550e743de15444e8226a9bf606a3cf180d37570ac4645a57a1684f5101"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t20_c50",
+        "path": "trained_models/sig_yolo_v8n_f40t20_c50/weights/best.pt",
+        "sha256": "3eaab081a7d2a82e2c3ee238685f365a643d80f13b21bd993c9855b3139828db"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t20_c100",
+        "path": "trained_models/sig_yolo_v8n_f40t20_c100/weights/best.pt",
+        "sha256": "fe05b4617cd590e75fbb34690aecbc0261760a4b8f63f58c2820781d717e62de"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t20_c150",
+        "path": "trained_models/sig_yolo_v8n_f40t20_c150/weights/best.pt",
+        "sha256": "ef30218d9b3797574afc56abd1aaa368ce04a2eba6d1bd58fe824645c73f248b"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t40_c25",
+        "path": "trained_models/sig_yolo_v8n_f40t40_c25/weights/best.pt",
+        "sha256": "d441c76fefb46dcda91b78b50af2ff14bac24599d661178b709d85779d730ee3"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t40_c50",
+        "path": "trained_models/sig_yolo_v8n_f40t40_c50/weights/best.pt",
+        "sha256": "367221350a7c702075b9058a30bf17c61e8248229c5a9ce93439658a58aab498"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t40_c100",
+        "path": "trained_models/sig_yolo_v8n_f40t40_c100/weights/best.pt",
+        "sha256": "410bdd736ebc350e38b4f962838d5ee3d814f0845ab5a7e46c7ecc66feae3789"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t40_c150",
+        "path": "trained_models/sig_yolo_v8n_f40t40_c150/weights/best.pt",
+        "sha256": "337c8c7d6a4a44195cea8d7157d54b8197d1705720cb40093b43b389bb1e9783"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t80_c25",
+        "path": "trained_models/sig_yolo_v8n_f40t80_c25/weights/best.pt",
+        "sha256": "da16bbddb2c597defd1de88933b3a13185b6bfe1f0fd9ba1e1f11d33a5af7a05"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t80_c50",
+        "path": "trained_models/sig_yolo_v8n_f40t80_c50/weights/best.pt",
+        "sha256": "3365b119cfaa75bc8250bc76d693de777f9cd58eb89b9844c94ae26281330121"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t80_c100",
+        "path": "trained_models/sig_yolo_v8n_f40t80_c100/weights/best.pt",
+        "sha256": "cef6eb53a72d82dafc9296d90228d6c94d7e65ce6d3dff718ce7533a38c2b72d"
+      },
+      {
+        "model": "sig_yolo_v8n_f40t80_c150",
+        "path": "trained_models/sig_yolo_v8n_f40t80_c150/weights/best.pt",
+        "sha256": "0ae0b5a98dee3dbc0a76885a93f4c6306110e219ebd3439d15457025ab072e43"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t20_c25",
+        "path": "trained_models/sig_yolo_v8n_f80t20_c25/weights/best.pt",
+        "sha256": "c78807537d5e508bc713a9b8edbbd027abc5525f4ec8a0e373d4b2d821ce7681"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t20_c50",
+        "path": "trained_models/sig_yolo_v8n_f80t20_c50/weights/best.pt",
+        "sha256": "c9e16d158aafe377ef2d464992035486e1be65511575717a9b868160ea79cbe8"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t20_c100",
+        "path": "trained_models/sig_yolo_v8n_f80t20_c100/weights/best.pt",
+        "sha256": "76d29fd4288b553c14cf6988917f57d6f76e12c685ed2aef304f74a7c1434e95"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t20_c150",
+        "path": "trained_models/sig_yolo_v8n_f80t20_c150/weights/best.pt",
+        "sha256": "f9e186bfbce22adfc7496dfab8c13f2575495ed26952780276b80bc429b3084f"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t40_c25",
+        "path": "trained_models/sig_yolo_v8n_f80t40_c25/weights/best.pt",
+        "sha256": "2e2e0f5c6aefa5238d3d06b4a67934a36ee7b6fb330df45b696db18113ced1da"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t40_c50",
+        "path": "trained_models/sig_yolo_v8n_f80t40_c50/weights/best.pt",
+        "sha256": "85af79490d219709af72bae9033a8d23a92677e593ed7757c889b683b7f67c4f"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t40_c100",
+        "path": "trained_models/sig_yolo_v8n_f80t40_c100/weights/best.pt",
+        "sha256": "e60728798a6db806c067418b9ac41356a033dd7ac7fa3e45e8d4768e290d5394"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t40_c150",
+        "path": "trained_models/sig_yolo_v8n_f80t40_c150/weights/best.pt",
+        "sha256": "73e139d605750db31fc8ba9cf1c58370e602712cc089a5dd04e7792029f65000"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t80_c25",
+        "path": "trained_models/sig_yolo_v8n_f80t80_c25/weights/best.pt",
+        "sha256": "418e2d8471ec4f076b83c09180ff29ea9645907f3cd481ba3547f5227237f28b"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t80_c50",
+        "path": "trained_models/sig_yolo_v8n_f80t80_c50/weights/best.pt",
+        "sha256": "70ea4431b95cae3b5616a159354ed954a9d0247c1c529bb0d7f8258c7ad9a559"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t80_c100",
+        "path": "trained_models/sig_yolo_v8n_f80t80_c100/weights/best.pt",
+        "sha256": "b230406080696ccf69efe98e2b9b07bba28eb8cfe9209d138a0284add2e1cf4b"
+      },
+      {
+        "model": "sig_yolo_v8n_f80t80_c150",
+        "path": "trained_models/sig_yolo_v8n_f80t80_c150/weights/best.pt",
+        "sha256": "1946a7d6314a1f940049e4cee39f82a7cfd606b50baba848278670985ee4caf0"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t20_c25",
+        "path": "trained_models/sig_yolo_v8s_f20t20_c25/weights/best.pt",
+        "sha256": "4db56e089f06892315483450819d46de719bac0ae467579e43a38fff51115675"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t20_c50",
+        "path": "trained_models/sig_yolo_v8s_f20t20_c50/weights/best.pt",
+        "sha256": "e4d00ab7be9b9f3ba3a5f5c8f23407540ecbdeed6c287c529fc34014e87224f2"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t20_c100",
+        "path": "trained_models/sig_yolo_v8s_f20t20_c100/weights/best.pt",
+        "sha256": "adfe6895108c6e42d29b829c9af699a9191170fcd1a536b570264a5325f232e0"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t20_c150",
+        "path": "trained_models/sig_yolo_v8s_f20t20_c150/weights/best.pt",
+        "sha256": "e703b1be24dc558e7221b72cdf3230275aec89964772293464c213a13f76e8c7"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t40_c25",
+        "path": "trained_models/sig_yolo_v8s_f20t40_c25/weights/best.pt",
+        "sha256": "ccbb68b3cbaa15e5b25ba6f7b053f73ee029a60ea4169790db9ac5fcf1c937db"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t40_c50",
+        "path": "trained_models/sig_yolo_v8s_f20t40_c50/weights/best.pt",
+        "sha256": "202b2bee89aa43f4b223c2fb23e5cab32e9531821849f72240af92fb7558934d"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t40_c100",
+        "path": "trained_models/sig_yolo_v8s_f20t40_c100/weights/best.pt",
+        "sha256": "a8544c892a5407104eea373d61c0135b2476e7cfefea1e46932ab30b98395a7c"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t40_c150",
+        "path": "trained_models/sig_yolo_v8s_f20t40_c150/weights/best.pt",
+        "sha256": "1d01f31e6c10e7ae458a1653e526ceb3162893993eedd55cd08bb911304a2dd2"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t80_c25",
+        "path": "trained_models/sig_yolo_v8s_f20t80_c25/weights/best.pt",
+        "sha256": "8e69a89a9c90bb0808e24f167d58b270f4bd9e83b4fb84482ca550a07c6dd1ca"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t80_c50",
+        "path": "trained_models/sig_yolo_v8s_f20t80_c50/weights/best.pt",
+        "sha256": "027d8c2ec526719a17a23d002b03d317b46b88970ef0ce2bef7cc4f87b8a2214"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t80_c100",
+        "path": "trained_models/sig_yolo_v8s_f20t80_c100/weights/best.pt",
+        "sha256": "7bc7f787cbf1d47286c9dcfe2557c23e14fa4a902469dcb98d8ea6f257fb892a"
+      },
+      {
+        "model": "sig_yolo_v8s_f20t80_c150",
+        "path": "trained_models/sig_yolo_v8s_f20t80_c150/weights/best.pt",
+        "sha256": "e69a4a172b738bbf29f3c57ce6218d6ad78174c02783273ad1198b72cf3a98e9"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t20_c25",
+        "path": "trained_models/sig_yolo_v8s_f40t20_c25/weights/best.pt",
+        "sha256": "da69242aa5e80c3f8c7d7df0d1cdca80a693291cb7fefed2fe98a05fdc964127"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t20_c50",
+        "path": "trained_models/sig_yolo_v8s_f40t20_c50/weights/best.pt",
+        "sha256": "41922d90008e06df426d7e3495539c361129d94aa6cf5b9253525002bf18b777"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t20_c100",
+        "path": "trained_models/sig_yolo_v8s_f40t20_c100/weights/best.pt",
+        "sha256": "2ae938cca799823aaec8586088fef4e8dca944d1508c3b29feec76f71fe064ec"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t20_c150",
+        "path": "trained_models/sig_yolo_v8s_f40t20_c150/weights/best.pt",
+        "sha256": "cb302a2f3a051feeaf75646ef560d04e4b21f37c4e7bb87836eb257a2f197878"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t40_c25",
+        "path": "trained_models/sig_yolo_v8s_f40t40_c25/weights/best.pt",
+        "sha256": "3e14318a7b64a6900414733b092b45fdcc589c13af2cbeec02c06542db933c68"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t40_c50",
+        "path": "trained_models/sig_yolo_v8s_f40t40_c50/weights/best.pt",
+        "sha256": "568b632876d79861f63ac581ffe7885996ac9b47d463258d241adaac39ff2a76"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t40_c100",
+        "path": "trained_models/sig_yolo_v8s_f40t40_c100/weights/best.pt",
+        "sha256": "a6756271f0aae509a91446f2bcdcf9134a701c2e9a743d46cd57241a73a49f98"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t40_c150",
+        "path": "trained_models/sig_yolo_v8s_f40t40_c150/weights/best.pt",
+        "sha256": "39badb4b42124dd6fdcf483748ab1f4cc3acb3a346623df9ddf835f3ac7dcc2c"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t80_c25",
+        "path": "trained_models/sig_yolo_v8s_f40t80_c25/weights/best.pt",
+        "sha256": "1016f772839c3659f5a2954dab91b1f0f89a5f566b81cd858abb9fce6df0e761"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t80_c50",
+        "path": "trained_models/sig_yolo_v8s_f40t80_c50/weights/best.pt",
+        "sha256": "6378fccbd78d220ee68ea51faf4e7c7e970f610cb5093ddab191e59ee871fa51"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t80_c100",
+        "path": "trained_models/sig_yolo_v8s_f40t80_c100/weights/best.pt",
+        "sha256": "ebc0ef25a1a093c077a7d5c49e11f15d2e52235651134b0e37f17f7dc30558ec"
+      },
+      {
+        "model": "sig_yolo_v8s_f40t80_c150",
+        "path": "trained_models/sig_yolo_v8s_f40t80_c150/weights/best.pt",
+        "sha256": "47b9243ec7610eb32af892b561f0ae1447195f19eb03b38919a89b9bb08330fc"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t20_c25",
+        "path": "trained_models/sig_yolo_v8s_f80t20_c25/weights/best.pt",
+        "sha256": "c2729d87a1d63d6d52a3bc2cdf325a7ebc38b0da66ef24a311da3d5b99b767aa"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t20_c50",
+        "path": "trained_models/sig_yolo_v8s_f80t20_c50/weights/best.pt",
+        "sha256": "a271eff984c47b96888e71979307bd7fdc19a02f1549a9191587a2ff336610b2"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t20_c100",
+        "path": "trained_models/sig_yolo_v8s_f80t20_c100/weights/best.pt",
+        "sha256": "a9cfc88ad93a064d28b6ec336c232b05be88cf782bcd4fd1b8674fc6ecd13cea"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t20_c150",
+        "path": "trained_models/sig_yolo_v8s_f80t20_c150/weights/best.pt",
+        "sha256": "8d5260b561dee2f49194cf1c1e6f98f130fc52a672c6232053273169954161c5"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t40_c25",
+        "path": "trained_models/sig_yolo_v8s_f80t40_c25/weights/best.pt",
+        "sha256": "a3f8800ff14c748c557672e779e14dc76d2575805739773f0fe55e2e01a46128"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t40_c50",
+        "path": "trained_models/sig_yolo_v8s_f80t40_c50/weights/best.pt",
+        "sha256": "3d0ecc8d554e7001f2e3af94b25a21d1eff1f66a2c1b4c898fb89f34a962d5e5"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t40_c100",
+        "path": "trained_models/sig_yolo_v8s_f80t40_c100/weights/best.pt",
+        "sha256": "f8617b0527615ff7948428a8600cbc8d6d5f50f83bd4b6b5bb612c3db1a2a567"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t40_c150",
+        "path": "trained_models/sig_yolo_v8s_f80t40_c150/weights/best.pt",
+        "sha256": "b7d479c5deb6e2a04f8a31113734f5e0790955bf6493f0550348b4b05bbe1def"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t80_c25",
+        "path": "trained_models/sig_yolo_v8s_f80t80_c25/weights/best.pt",
+        "sha256": "2fe13477d5158f5fa0682163b05bc423bee46dd1eb042dc9f3cb0aab0f75bed2"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t80_c50",
+        "path": "trained_models/sig_yolo_v8s_f80t80_c50/weights/best.pt",
+        "sha256": "f9dcd25a421d83d19e1731b510f21761bc6b7866e804e67245292e1c77e7f8d5"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t80_c100",
+        "path": "trained_models/sig_yolo_v8s_f80t80_c100/weights/best.pt",
+        "sha256": "992c6eb71b225a3dda26602f741189f5ad8c270685f3f4482834e8d3578243f8"
+      },
+      {
+        "model": "sig_yolo_v8s_f80t80_c150",
+        "path": "trained_models/sig_yolo_v8s_f80t80_c150/weights/best.pt",
+        "sha256": "83dd6df1948b1b53040ab568b65a0ac58bfb4a3a717137f2d110accc1e4e19f8"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t20_c25",
+        "path": "trained_models/sig_yolo_v8x_f20t20_c25/weights/best.pt",
+        "sha256": "3abc7a256e5262223ac5e9a7a968e07348d3f0df0a11ba92991fc7aad0ffa518"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t20_c50",
+        "path": "trained_models/sig_yolo_v8x_f20t20_c50/weights/best.pt",
+        "sha256": "0e20dcd474e8dd2963999e9620465a65d8b6d7156c4b320be6652a9d5a624d5e"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t20_c100",
+        "path": "trained_models/sig_yolo_v8x_f20t20_c100/weights/best.pt",
+        "sha256": "62f4b2faabf6011dcb5f273568661b1500a9d44bd77272fdc9dc7d0e5698cdd8"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t20_c150",
+        "path": "trained_models/sig_yolo_v8x_f20t20_c150/weights/best.pt",
+        "sha256": "e26ba9bf3123910b9cac639d91e225868d4d1204947388c96f6c6f6bcb19b63c"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t40_c25",
+        "path": "trained_models/sig_yolo_v8x_f20t40_c25/weights/best.pt",
+        "sha256": "ab2ce207d86fff45bb60a2e66968b1409e6205b02006138d10f9cacc1c31116f"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t40_c50",
+        "path": "trained_models/sig_yolo_v8x_f20t40_c50/weights/best.pt",
+        "sha256": "e47b0636fc39f4fa5005e4fc4da2c93622edd75197c1d81a0fe742afdb435e9b"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t40_c100",
+        "path": "trained_models/sig_yolo_v8x_f20t40_c100/weights/best.pt",
+        "sha256": "66a1501eba2c232b229abc27f898b21cb462e89b02d372585b536192e3910560"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t40_c150",
+        "path": "trained_models/sig_yolo_v8x_f20t40_c150/weights/best.pt",
+        "sha256": "b2a049eeb4aaec88d85670351c266673ff9cb128cb127f49270406724fc16f6c"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t80_c25",
+        "path": "trained_models/sig_yolo_v8x_f20t80_c25/weights/best.pt",
+        "sha256": "be3a00b936310a24feef82d972771f6f65b0dc25588447934f4316cf7bff9c89"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t80_c50",
+        "path": "trained_models/sig_yolo_v8x_f20t80_c50/weights/best.pt",
+        "sha256": "800340c0083ee2a052f6791d1de1f3b66f7cd2c218976d6e92f1cfcd44b3b124"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t80_c100",
+        "path": "trained_models/sig_yolo_v8x_f20t80_c100/weights/best.pt",
+        "sha256": "61c0c31a137818d0ffcce9c95f1ab936df08715b91ccc00208783afd441bf383"
+      },
+      {
+        "model": "sig_yolo_v8x_f20t80_c150",
+        "path": "trained_models/sig_yolo_v8x_f20t80_c150/weights/best.pt",
+        "sha256": "be6ed51305646583565ff6f903e12e5652135497207bc6079d2d9981d8d076d0"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t20_c25",
+        "path": "trained_models/sig_yolo_v8x_f40t20_c25/weights/best.pt",
+        "sha256": "3e6c9e241d60f96129d0db3bc406dc17bc3f6126313b13f397cb97deec844c45"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t20_c50",
+        "path": "trained_models/sig_yolo_v8x_f40t20_c50/weights/best.pt",
+        "sha256": "35fd42d0830d2ee795538e61c11dbbd39645e9f4dced76a54b5663f94ca7a28f"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t20_c100",
+        "path": "trained_models/sig_yolo_v8x_f40t20_c100/weights/best.pt",
+        "sha256": "509e9775b36ddee95633058cbe4fc6586905ebc2120a6cb5bd849b2b33b43b87"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t20_c150",
+        "path": "trained_models/sig_yolo_v8x_f40t20_c150/weights/best.pt",
+        "sha256": "8017cd99156ee33703dc1932d2d8a0f48158e7408ee351ae7af37b8f603abc64"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t40_c25",
+        "path": "trained_models/sig_yolo_v8x_f40t40_c25/weights/best.pt",
+        "sha256": "22785b44615b95dc588cc905ebc4f2d8a3bfa7b5c02457f934e907f362ec04cf"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t40_c50",
+        "path": "trained_models/sig_yolo_v8x_f40t40_c50/weights/best.pt",
+        "sha256": "8b81c8a864177d08a4b556afb308772d390ca0ff7cb2a4c588c9fb55647c9b9d"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t40_c100",
+        "path": "trained_models/sig_yolo_v8x_f40t40_c100/weights/best.pt",
+        "sha256": "8b3a6108bb75094d81a60d69dcea0c34834ee88b03c2027a05eafa1382096185"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t40_c150",
+        "path": "trained_models/sig_yolo_v8x_f40t40_c150/weights/best.pt",
+        "sha256": "bb0eb8c0dd11683a8b8b932128a89f81fb6a0e496145d6a06e68bec49afe752f"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t80_c25",
+        "path": "trained_models/sig_yolo_v8x_f40t80_c25/weights/best.pt",
+        "sha256": "9f2af5cc9e8054afa1baf542ab8b701e45e8591f9902b86893cc2a33f279ba8d"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t80_c50",
+        "path": "trained_models/sig_yolo_v8x_f40t80_c50/weights/best.pt",
+        "sha256": "b3ca9cd244d02ad4a68856e5ed335c188f0af87096d8fb69f8cc00420ee233a2"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t80_c100",
+        "path": "trained_models/sig_yolo_v8x_f40t80_c100/weights/best.pt",
+        "sha256": "7d1680f359826bcf29598cf2eb3a518bd29e3f69e8faa6e350484c7ac1bc09f0"
+      },
+      {
+        "model": "sig_yolo_v8x_f40t80_c150",
+        "path": "trained_models/sig_yolo_v8x_f40t80_c150/weights/best.pt",
+        "sha256": "8eef19ba9ff69d2d98016204cda4c46ba32b4c46fb693dc971bbf40702a4d1a6"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t20_c25",
+        "path": "trained_models/sig_yolo_v8x_f80t20_c25/weights/best.pt",
+        "sha256": "6d85d521c1d750d1635e07354403c7e3d08fb203354757f236f55d8cbbb4fc32"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t20_c50",
+        "path": "trained_models/sig_yolo_v8x_f80t20_c50/weights/best.pt",
+        "sha256": "cac6b2204416f6f594f68c06e7cc7e033310d058dc1315e6681664f2c806b0fc"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t20_c100",
+        "path": "trained_models/sig_yolo_v8x_f80t20_c100/weights/best.pt",
+        "sha256": "136c27dc13939f8682ecf5ee0a87c334f257bd975a41e84e52b036154da3573b"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t20_c150",
+        "path": "trained_models/sig_yolo_v8x_f80t20_c150/weights/best.pt",
+        "sha256": "0470d7cc99894342c927fa88c0cfa7e3c80298ab9a4e2fe88e5fd17d869e1b10"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t40_c25",
+        "path": "trained_models/sig_yolo_v8x_f80t40_c25/weights/best.pt",
+        "sha256": "0e62ab1d8bb2b856fbbc7c66525b0cfffccb3ce6c72abbc840d484d30e243b90"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t40_c50",
+        "path": "trained_models/sig_yolo_v8x_f80t40_c50/weights/best.pt",
+        "sha256": "7b2792c330a46a1a99bfd99566f02ae7df27ce089dfb0652913b8354fac81b6b"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t40_c100",
+        "path": "trained_models/sig_yolo_v8x_f80t40_c100/weights/best.pt",
+        "sha256": "9a8084e06fcae916b857ac341bf74e84ea6f386b2a39ce9c0d363229b198db1c"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t40_c150",
+        "path": "trained_models/sig_yolo_v8x_f80t40_c150/weights/best.pt",
+        "sha256": "2ed45fc538eaf4bd47c0ba2fb858323dccb30e0438c0436d9700e0f243d341f0"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t80_c25",
+        "path": "trained_models/sig_yolo_v8x_f80t80_c25/weights/best.pt",
+        "sha256": "f3add7620447d96d0c254caf43841ba70083b0b90a8bce41c46db97b96f1f994"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t80_c50",
+        "path": "trained_models/sig_yolo_v8x_f80t80_c50/weights/best.pt",
+        "sha256": "f028f892ff5fe63378c7e83b6c0cd5b9cdea647c679f1c3dc9bb8b7c6cba2e7f"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t80_c100",
+        "path": "trained_models/sig_yolo_v8x_f80t80_c100/weights/best.pt",
+        "sha256": "f462b0c90f82138a5b3bd13aaf7cedcdadd6709b2253b898c73837e68e05abc6"
+      },
+      {
+        "model": "sig_yolo_v8x_f80t80_c150",
+        "path": "trained_models/sig_yolo_v8x_f80t80_c150/weights/best.pt",
+        "sha256": "e95a403b88f6dd95da1138de344d71057853306a3cfb1c485165546f4f397fca"
+      }
+    ]
+  },
+  "expected_latest_cedar_models": [
+    "sig_yolo_v8n_f20t20_c25",
+    "sig_yolo_v8n_f20t20_c50",
+    "sig_yolo_v8n_f20t20_c100",
+    "sig_yolo_v8n_f20t20_c150",
+    "sig_yolo_v8n_f20t40_c25",
+    "sig_yolo_v8n_f20t40_c50",
+    "sig_yolo_v8n_f20t40_c100",
+    "sig_yolo_v8n_f20t40_c150",
+    "sig_yolo_v8n_f20t80_c25",
+    "sig_yolo_v8n_f20t80_c50",
+    "sig_yolo_v8n_f20t80_c100",
+    "sig_yolo_v8n_f20t80_c150",
+    "sig_yolo_v8n_f40t20_c25",
+    "sig_yolo_v8n_f40t20_c50",
+    "sig_yolo_v8n_f40t20_c100",
+    "sig_yolo_v8n_f40t20_c150",
+    "sig_yolo_v8n_f40t40_c25",
+    "sig_yolo_v8n_f40t40_c50",
+    "sig_yolo_v8n_f40t40_c100",
+    "sig_yolo_v8n_f40t40_c150",
+    "sig_yolo_v8n_f40t80_c25",
+    "sig_yolo_v8n_f40t80_c50",
+    "sig_yolo_v8n_f40t80_c100",
+    "sig_yolo_v8n_f40t80_c150",
+    "sig_yolo_v8n_f80t20_c25",
+    "sig_yolo_v8n_f80t20_c50",
+    "sig_yolo_v8n_f80t20_c100",
+    "sig_yolo_v8n_f80t20_c150",
+    "sig_yolo_v8n_f80t40_c25",
+    "sig_yolo_v8n_f80t40_c50",
+    "sig_yolo_v8n_f80t40_c100",
+    "sig_yolo_v8n_f80t40_c150",
+    "sig_yolo_v8n_f80t80_c25",
+    "sig_yolo_v8n_f80t80_c50",
+    "sig_yolo_v8n_f80t80_c100",
+    "sig_yolo_v8n_f80t80_c150",
+    "sig_yolo_v8s_f20t20_c25",
+    "sig_yolo_v8s_f20t20_c50",
+    "sig_yolo_v8s_f20t20_c100",
+    "sig_yolo_v8s_f20t20_c150",
+    "sig_yolo_v8s_f20t40_c25",
+    "sig_yolo_v8s_f20t40_c50",
+    "sig_yolo_v8s_f20t40_c100",
+    "sig_yolo_v8s_f20t40_c150",
+    "sig_yolo_v8s_f20t80_c25",
+    "sig_yolo_v8s_f20t80_c50",
+    "sig_yolo_v8s_f20t80_c100",
+    "sig_yolo_v8s_f20t80_c150",
+    "sig_yolo_v8s_f40t20_c25",
+    "sig_yolo_v8s_f40t20_c50",
+    "sig_yolo_v8s_f40t20_c100",
+    "sig_yolo_v8s_f40t20_c150",
+    "sig_yolo_v8s_f40t40_c25",
+    "sig_yolo_v8s_f40t40_c50",
+    "sig_yolo_v8s_f40t40_c100",
+    "sig_yolo_v8s_f40t40_c150",
+    "sig_yolo_v8s_f40t80_c25",
+    "sig_yolo_v8s_f40t80_c50",
+    "sig_yolo_v8s_f40t80_c100",
+    "sig_yolo_v8s_f40t80_c150",
+    "sig_yolo_v8s_f80t20_c25",
+    "sig_yolo_v8s_f80t20_c50",
+    "sig_yolo_v8s_f80t20_c100",
+    "sig_yolo_v8s_f80t20_c150",
+    "sig_yolo_v8s_f80t40_c25",
+    "sig_yolo_v8s_f80t40_c50",
+    "sig_yolo_v8s_f80t40_c100",
+    "sig_yolo_v8s_f80t40_c150",
+    "sig_yolo_v8s_f80t80_c25",
+    "sig_yolo_v8s_f80t80_c50",
+    "sig_yolo_v8s_f80t80_c100",
+    "sig_yolo_v8s_f80t80_c150",
+    "sig_yolo_v8x_f20t20_c25",
+    "sig_yolo_v8x_f20t20_c50",
+    "sig_yolo_v8x_f20t20_c100",
+    "sig_yolo_v8x_f20t20_c150",
+    "sig_yolo_v8x_f20t40_c25",
+    "sig_yolo_v8x_f20t40_c50",
+    "sig_yolo_v8x_f20t40_c100",
+    "sig_yolo_v8x_f20t40_c150",
+    "sig_yolo_v8x_f20t80_c25",
+    "sig_yolo_v8x_f20t80_c50",
+    "sig_yolo_v8x_f20t80_c100",
+    "sig_yolo_v8x_f20t80_c150",
+    "sig_yolo_v8x_f40t20_c25",
+    "sig_yolo_v8x_f40t20_c50",
+    "sig_yolo_v8x_f40t20_c100",
+    "sig_yolo_v8x_f40t20_c150",
+    "sig_yolo_v8x_f40t40_c25",
+    "sig_yolo_v8x_f40t40_c50",
+    "sig_yolo_v8x_f40t40_c100",
+    "sig_yolo_v8x_f40t40_c150",
+    "sig_yolo_v8x_f40t80_c25",
+    "sig_yolo_v8x_f40t80_c50",
+    "sig_yolo_v8x_f40t80_c100",
+    "sig_yolo_v8x_f40t80_c150",
+    "sig_yolo_v8x_f80t20_c25",
+    "sig_yolo_v8x_f80t20_c50",
+    "sig_yolo_v8x_f80t20_c100",
+    "sig_yolo_v8x_f80t20_c150",
+    "sig_yolo_v8x_f80t40_c25",
+    "sig_yolo_v8x_f80t40_c50",
+    "sig_yolo_v8x_f80t40_c100",
+    "sig_yolo_v8x_f80t40_c150",
+    "sig_yolo_v8x_f80t80_c25",
+    "sig_yolo_v8x_f80t80_c50",
+    "sig_yolo_v8x_f80t80_c100",
+    "sig_yolo_v8x_f80t80_c150"
+  ],
+  "latest_status": "complete"
+}
