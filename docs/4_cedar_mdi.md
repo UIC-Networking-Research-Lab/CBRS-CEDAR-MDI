@@ -33,7 +33,7 @@ bottleneck τ, the largest per-node compute or per-link transfer time, from the
 profiles. Candidates are ranked by τ, with the total compute plus transfer time as the
 tie-breaker. The runtime then deploys the top K = 3 candidates.
 
-This is the optimization in paper Section V-C, using the pipeline model from
+This is the optimization in paper Section V-B, using the pipeline model from
 Section III-A. For a fixed model, compressor and network environment, a policy
 p defines the stage groups and their assignment along the node route. We solve
 
@@ -182,7 +182,7 @@ improve the former while increasing the latter. The included
 Four Jetson Orin Nano nodes, CPU, full 848-frame test split, 63 runs per model
 (7 compression settings × 3 bandwidth environments × 3 ranked partitions).
 The table summarizes runs within 0.01 overlap F1 of local execution to exclude
-policies with severe quality degradation. Figure 9 includes all policies:
+policies with severe quality degradation. The CEDAR-MDI figure includes all policies:
 
 | Model | Local time per frame (s) | Runs kept | Throughput vs. local | Task delay vs. local |
 |---|---:|---:|---:|---:|
@@ -202,7 +202,7 @@ policies with severe quality degradation. Figure 9 includes all policies:
 The highest-speed-up case is extra-large, INT8, high bandwidth, R3: 0.948 frames/s
 versus 0.289 locally, with overlap F1 = 1.000 in both cases. Its maximum observed
 frame delay is 7.1 s; across quality-retained policies, the maximum is 16.1 s.
-The [full report](../results/REPORT.md#4-cedar-mdi) also compares transferred
+The [full paper and appendix](https://arxiv.org/abs/2611.00625) also compares transferred
 payload and compute balance against original-YOLO module-boundary MDI.
 
 Data: [`results/paper/cedar_yolo_mdi_comparison_data.csv`](../results/paper/cedar_yolo_mdi_comparison_data.csv),

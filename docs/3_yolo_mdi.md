@@ -234,7 +234,7 @@ python scripts/plots/plot_yolo_mdi_vs_local.py \
     --output_dir distributed_vs_baseline_plots
 ```
 
-## 5. Reference results (paper Figure 5)
+## 5. Reference results (paper and appendix)
 
 ![Original-YOLO MDI: partitions, overlap F1 and inference time per frame](figures/yolo_mdi_bandwidth_comparison.png)
 
@@ -261,10 +261,6 @@ throughput is taken from the full run, following the paper's protocol.
   model boundary, and the extra-large backbone carries 41-44% of computation.
   Compression reduces transfer cost but does not rebalance this fixed partition.
 
-See the [full report](../results/REPORT.md#3-original-yolo-mdi) for payload,
-throughput and end-to-end delay comparisons. In particular, a higher end-to-end
-delay does not imply lower throughput in a pipelined execution.
-
-Data: [full-test local/MDI comparison](../results/paper/yolo_mdi_vs_local_results.csv),
-[compression sweep](../results/paper/yolo_mdi_bandwidth_comparison_data.csv),
-[payload and delay summary](../results/paper/yolo_module_boundary_summary.csv).
+See the [full paper and appendix](https://arxiv.org/abs/2611.00625) for payload,
+throughput and end-to-end delay comparisons. Higher end-to-end delay does not
+imply lower throughput in a pipelined execution.
