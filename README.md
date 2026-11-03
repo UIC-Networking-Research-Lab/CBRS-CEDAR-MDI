@@ -1,10 +1,12 @@
 # CBRS-CEDAR-MDI
 
-**Code, pretrained models and experiment data for CEDAR:**
+**Code, pretrained models and experiment data for CEDAR.**
+
 **[Communication-Efficient Model-Distributed Inference for CBRS Radar Detection at the Edge](https://arxiv.org/abs/2611.00625)**
+
 Teng Li and Hulya Seferoglu, University of Illinois Chicago. Submitted to ICC 2027.
 
-**[Full paper with appendix ? arXiv](https://arxiv.org/abs/2611.00625)** ?
+**[Full paper with appendix on arXiv](https://arxiv.org/abs/2611.00625)** |
 **[Direct PDF](https://uic-networking-research-lab.github.io/CEDAR-LongVersionPaper/CEDAR-WithAppendix.pdf)**
 
 CEDAR (Communication-Efficient, Edge-Distributed Architecture for Radar detection)
@@ -19,8 +21,8 @@ partition selection to minimize the pipeline bottleneck.
 | Experiment | Result reported in the paper |
 |---|---|
 | Original YOLO | YOLOv8, YOLO11 and YOLO26 achieve overlap F1 above **0.99**; their multi-scale structures incur high activation-transfer costs under MDI. |
-| CEDAR-YOLO | **35?57% fewer parameters** and **16?33% less model inference time** than same-scale YOLOv8, with matching mAP@0.5 and overlap F1 differences below 0.006. |
-| CEDAR-MDI | Up to **3.27? single-device throughput** with unchanged overlap F1; the top-ranked candidates reach up to **3.21?**. |
+| CEDAR-YOLO | **35-57% fewer parameters** and **16-33% less model inference time** than same-scale YOLOv8, with matching mAP@0.5 and overlap F1 differences below 0.006. |
+| CEDAR-MDI | Up to **3.27x single-device throughput** with unchanged overlap F1; the top-ranked candidates reach up to **3.21x**. |
 
 Training and the architecture-quality sweep use the **PC GPU**. Local speed
 baselines and all MDI measurements use **Jetson Orin Nano CPUs in FP32**.
@@ -30,7 +32,7 @@ The following figures reproduce the submitted paper's comparisons.
 
 ![CEDAR-YOLO versus same-scale YOLOv8](docs/figures/cedar_yolo_local_comparison.png)
 
-The 20 ? 20, full-coverage detector reduces parameters and model computation
+The 20 x 20, full-coverage detector reduces parameters and model computation
 while preserving detection quality. Gray denotes YOLOv8; blue denotes CEDAR-YOLO.
 
 ### CEDAR-MDI: throughput and overlap detection
@@ -38,7 +40,7 @@ while preserving detection quality. Gray denotes YOLOv8; blue denotes CEDAR-YOLO
 ![CEDAR-MDI versus single-device inference across bandwidth environments](docs/figures/cedar_yolo_mdi_comparison.png)
 
 Left: inference time per completed frame (**1 / throughput**); right: overlap F1.
-R1?R3 are the three offline-ranked candidates for each model, bandwidth environment
+R1-R3 are the three offline-ranked candidates for each model, bandwidth environment
 and compressor. The best throughput gain uses extra-large CEDAR-YOLO with INT8.
 Top-k sparsification can substantially reduce detection quality. Throughput gains
 are summarized for runs within 0.01 overlap F1 of local inference; all candidates
